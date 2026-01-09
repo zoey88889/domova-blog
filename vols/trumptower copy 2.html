@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="../styles/styles.css">
+  <meta charset="UTF-8" />
+  <title>Lantern House | West Chelsea Condo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <style>
+    body { font-family: 'Helvetica Neue', sans-serif; margin: 0; padding: 0; background: #fefefe; color: #333; }
+    header { background: #fafafa; padding: 2rem; text-align: center; border-bottom: 1px solid #eee; }
+    h1 { font-size: 2rem; margin: 0; }
+    h2 { color: #666; font-weight: 400; margin-top: 0.5rem; }
+    section { max-width: 800px; margin: 2rem auto; padding: 0 1.5rem; }
+    .block { margin-bottom: 2rem; }
+    #map { height: 300px; border-radius: 12px; margin-top: 2rem; }
+    footer { text-align: center; font-size: 0.85rem; color: #888; margin: 3rem 0 1rem; }
+  </style>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+
+<header>
+  <!-- ✅ SEO Meta for Lantern House -->
+<title>Lantern House｜纽约切尔西高线旁奢华公寓 | Luxury Condos in West Chelsea NYC</title>
+
+<meta name="description" content="Lantern House 公寓位于纽约曼哈顿西切尔西，由 Heatherwick Studio 设计，拥有哈德逊河景观与高线公园旁的地理优势。Explore luxury condos with bay windows, river views, and exceptional amenities in NYC.">
+
+<meta name="keywords" content="Lantern House, 纽约买房, 曼哈顿豪宅, 切尔西公寓, High Line 房产, Heatherwick Studio, NYC real estate, West Chelsea condos, Hudson River view">
+
+<!-- 社交平台分享优化 -->
+<meta property="og:title" content="Lantern House｜曼哈顿切尔西高线旁奢华公寓">
+<meta property="og:description" content="由 Heatherwick Studio 设计的标志性建筑，拥有奢华配套与哈德逊河景观，是纽约最受欢迎的高端公寓之一。">
+<meta property="og:image" content="https://yourdomain.com/images/lh.jpg"> <!-- 替换为实际图片链接 -->
+<meta property="og:url" content="https://yourdomain.com/vols/volX_lanternhouse.html">
+<meta property="og:type" content="article">
+
+<!-- 可选 Twitter 卡片 -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Lantern House｜Luxury Condos by the High Line in NYC">
+<meta name="twitter:description" content="Luxury residences designed by Heatherwick Studio, with panoramic Hudson River views and curated amenities.">
+<meta name="twitter:image" content="https://domova.netlify.app/images/lh.jpg">
+  <h1>🏙 Lantern House</h1>
+  <h2>515 West 18th Street, West Chelsea · Designed by Heatherwick Studio</h2>
+</header>
+
+<section>
+  <div class="block">
+    <h3>🏡 项目概况 Overview</h3>
+    <p>Lantern House 是由 Heatherwick Studio 设计的现代奢华公寓，位于 West Chelsea 最核心地段，紧邻 High Line 高线公园。整栋大楼采用现代 reinterpretation 的 bay window 建筑风格，配以定制砖石立面，呈现温暖而前卫的视觉体验。</p >
+    <p>Lantern House comprises 181 units across 22 floors, with units ranging from 1 to 4 bedrooms. Most residences feature breathtaking Hudson River and city views.</p >
+  </div>
+
+  <div class="block">
+    <h3>✨ 建筑亮点 Highlights</h3>
+    <ul>
+      <li>• Heatherwick Studio 建筑设计，融合复古与现代艺术感</li>
+      <li>• 宽敞弧形落地窗，提供曼哈顿天际线与哈德逊河视野</li>
+      <li>• 连接 High Line，步行可至 Hudson Yards 与 Chelsea 画廊</li>
+      <li>• 雕塑感玻璃大厅 Pavilion 与主楼相连</li>
+    </ul>
+  </div>
+
+  <div class="block">
+    <h3>🏢 当前在售单元 Units for Sale</h3>
+    <ul>
+      <li>1 Bed #403 / #603：$1,995,000 – 778 ft²</li>
+      <li>2 Bed #816：$4,550,000 – 1,614 ft²</li>
+    </ul>
+    <p>部分单位也可租赁，Base Rent $9,800–$10,000。</p >
+  </div>
+
+  <div class="block">
+    <h3>🌟 配套 Amenities</h3>
+    <ul>
+      <li>• 24小时礼宾服务 / Concierge</li>
+      <li>• 自行车房、冷藏储藏 / Bike & Cold Storage</li>
+      <li>• 停车场 / Parking Garage</li>
+      <li>• 宠物友好、快递储藏区 / Pet & Package Room</li>
+      <li>• 健身房、儿童娱乐空间、住户专属休息室</li>
+    </ul>
+  </div>
+
+  <div class="block">
+    <h3>📍 项目位置 / Location</h3>
+    <p>515 West 18th Street, New York, NY 10011</p >
+    <div id="map"></div>
+  </div>
+
+</section>
+
+
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script>
+  const map = L.map('map').setView([40.7467, -74.0060], 15);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© OpenStreetMap contributors'
+  }).addTo(map);
+  L.marker([40.7467, -74.0060]).addTo(map).bindPopup("Lantern House 📍").openPopup();
+</script>
+
+
+
+
+<div id="footer"></div>
+<script>
+  fetch("/components/footer.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("footer").innerHTML = html;
+    });
+</script>
+
+</body>
+</html>

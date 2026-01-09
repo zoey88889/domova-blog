@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<link rel="stylesheet" href="../styles/styles.css">
+  <meta charset="UTF-8" />
+  <title>50 West Street | Domova Luxury Living</title>
+  <meta name="description" content="50 West Street 位于金融区核心地段，拥有无与伦比的港口与城市景观，由国际建筑大师 Helmut Jahn 设计，64层高空住宅塔楼。">
+  <meta name="keywords" content="50 West Street, Financial District, NYC Condo, Hudson River View, Domova, Luxury Building">
+  <style>
+    body {
+      font-family: "Helvetica Neue", sans-serif;
+      padding: 2rem;
+      background-color: #ffffff;
+      color: #222;
+      line-height: 1.6;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+     }
+     h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+    h2 {
+      font-size: -0.5rem;;
+      color: #666;
+    }
+    section {
+      max-width: 800px;
+      margin: auto;
+      margin-bottom: 2.5rem;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      font-size: 14px;
+      color: #999;
+    }
+    .disclaimer {
+      font-size: 13px;
+      color: #888;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>50 West Street｜西50街奢华公寓</h1>
+    <h2>与海港天际线为邻 · 纽约地标性高塔住宅</h2>
+  </header>
+
+  <section>
+    <h3>📍 地址 / Location</h3>
+    <p>50 West Street, New York, NY 10006</p >
+    <p>位于曼哈顿金融区南端，近华尔街、自由女神像和世贸中心。</p >
+  </section>
+
+  <section>
+    <h3>🏗️ 建筑概况 / Overview</h3>
+    <p>由世界知名建筑师 Helmut Jahn 设计，2016年落成，共 64 层，高约 780 英尺。</p >
+    <p>建筑采用流线型玻璃幕墙设计，提供无障碍视野，眺望哈德逊河、东河、自由女神像及艾利斯岛。</p >
+  </section>
+
+  <section>
+    <h3>💰 价格区间 / Pricing</h3>
+    <ul>
+      <li>1 Bedroom：$1,695,000 – $3,290,000</li>
+      <li>2 Bedrooms：$2,995,000 – $3,780,000</li>
+      <li>3 Bedrooms：$4,950,000 – $5,800,000</li>
+      <li>4+ Bedrooms：$8,950,000</li>
+    </ul>
+  </section>
+
+  <section>
+    <h3>🌟 设计亮点 / Highlights</h3>
+    <ul>
+      <li>落地弧形玻璃幕墙，提供270°海景与城市全景</li>
+      <li>户型丰富，一至五居室，部分为跃层或双挑高空间</li>
+      <li>由 Thomas Juul Hansen 操刀室内设计，材质考究、布局开阔</li>
+    </ul>
+  </section>
+
+  <section>
+    <h3>💎 配套设施 / Amenities</h3>
+    <ul>
+      <li>四层专属配套楼层</li>
+      <li>健身中心、水疗中心（Water Club）、儿童活动区</li>
+      <li>64层观景天台 Observatory，城市全景娱乐空间</li>
+    </ul>
+  </section>
+
+  <section>
+    <h3>🏙️ 周边交通 / Transportation</h3>
+    <p>步行可达 PATH 世贸中心站、R/W/1/2/3/4/5 地铁线路，交通便捷。</p >
+  </section>
+
+  <section>
+    <h3>📝 50 West Street</h3>
+    <blockquote><strong>Where the Sky Meets the Sea</strong></blockquote>
+    <blockquote>在海港与城市之间 · 居住的终极诗意</blockquote>
+
+
+
+<div id="footer"></div>
+<script>
+  fetch("/components/footer.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("footer").innerHTML = html;
+    });
+</script>
+
+</body>
+</html>

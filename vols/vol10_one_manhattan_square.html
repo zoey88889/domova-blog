@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="stylesheet" href="../styles/styles.css">
+    <meta charset="UTF-8">
+    <title>VOL.10｜One Manhattan Square（OMS）</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.8; padding: 40px; max-width: 900px; margin: auto; color: #222; }
+        h1 { color: #000; }
+        h2 { color: #444; margin-top: 2em; }
+        .section { margin-bottom: 2em; }
+        .highlight { font-weight: bold; color: #333; }
+        .address, .developer, .architect, .keywords { margin: 1em 0; }
+        hr { border: none; border-top: 1px dashed #aaa; margin: 3em 0; }
+        .disclaimer { font-size: 0.9em; color: #666; margin-top: 3em; }
+    </style>
+</head>
+<body>
+    <h1>VOL.10｜One Manhattan Square（OMS）</h1>
+    <h2>「东河之光」｜A Shimmering Tower on the East River</h2>
+
+    <div class="section">
+        <h2>✦ 中文建筑赏析</h2>
+        <p>在曼哈顿下东城，一座如水晶般高耸的住宅塔楼屹立在东河岸边——One Manhattan Square，由纽约知名开发商 Extell Development 打造，堪称“Downtown 的城市绿洲”。</p>
+        <p>这座 80 层摩天住宅楼拥有纽约难得一见的东河三桥景观（曼哈顿桥、布鲁克林桥、威廉斯堡桥）视野，楼体采用玻璃幕墙设计，白天折射光线、夜晚如星辰倒映水面。</p>
+
+        <p class="highlight">✨核心亮点：</p>
+        <ul>
+            <li>顶级配套：超100,000平方英尺住户专属配套空间，包括：温水泳池、SPA、影院、高尔夫模拟器、私厨厨房、瑜伽馆、儿童游乐区、宠物乐园等。</li>
+            <li>风景稀缺：东向无遮挡东河景观，尽览曼哈顿与布鲁克林天际线。</li>
+            <li>高性价比豪宅：在纽约豪宅中，价格更具吸引力，适合自住或投资。</li>
+            <li>户型选择多样：从一居至三居，部分户型带阳台或落地窗。</li>
+            <li>周边生活便利：近F线地铁、Essex Market、新兴美食街区。</li>
+        </ul>
+
+        <div class="address"><strong>📍地址：</strong>252 South Street, Lower East Side, NYC</div>
+        <div class="developer"><strong>🏗️开发商：</strong>Extell Development</div>
+        <div class="architect"><strong>🏛️建筑事务所：</strong>Adamson Associates + Meyer Davis（室内设计）</div>
+        <div class="keywords"><strong>🌟关键词：</strong>Downtown 豪宅、东河景、全套配套、投资首选</div>
+    </div>
+
+    <hr>
+
+    <div class="section">
+        <h2>✦ English Version</h2>
+        <p>One Manhattan Square (OMS) rises like a crystalline spire over the East River—a bold addition to the Downtown Manhattan skyline. Developed by Extell, this 80-story glass tower is a vertical city resort nestled in the Lower East Side.</p>
+        <p>From sunrise over Brooklyn Bridge to sunset behind the skyline, OMS offers panoramic views, modern amenities, and unmatched value among NYC’s new luxury towers.</p>
+
+        <p class="highlight">✨ Highlights:</p>
+        <ul>
+            <li>100,000+ sq ft of amenities: Private spa, full-size pool, fitness center, private dining room, wine lounge, golf simulator, children’s playground, pet spa & more.</li>
+            <li>Waterfront Living: Unobstructed East River views, spanning three iconic bridges.</li>
+            <li>Modern Residences: Floor-to-ceiling windows, designer finishes, smart layouts.</li>
+            <li>Prime Investment: Luxury at a more accessible entry price, perfect for owners or investors.</li>
+            <li>Connected Convenience: Close to the F subway line, Essex Market, and hip dining scene.</li>
+        </ul>
+
+        <div class="address"><strong>📍Address:</strong> 252 South Street, Lower East Side, NYC</div>
+        <div class="developer"><strong>🏗️Developer:</strong> Extell Development</div>
+        <div class="architect"><strong>🏛️Architecture:</strong> Adamson Associates + Interiors by Meyer Davis</div>
+        <div class="keywords"><strong>🌟Keywords:</strong> East River view, Downtown lifestyle, value luxury, full-amenity condo</div>
+   
+
+
+<div id="footer"></div>
+<script>
+  fetch("/components/footer.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("footer").innerHTML = html;
+    });
+</script>
+
+</body>
+</html>

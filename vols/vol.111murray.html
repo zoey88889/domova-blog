@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<link rel="stylesheet" href="../styles/styles.css">
+    <meta charset="UTF-8">
+    <title>111 Murray Street | 纽约豪华公寓</title>
+</head>
+<body>
+    <h1>111 Murray Street｜111 默里街</h1>
+    <p><strong>地址：</strong>111 Murray Street, New York, NY 10007</p>
+
+    <h2>项目介绍</h2>
+    <p>
+        111 Murray Street 是一座优雅高耸的摩天住宅，由 Kohn Pedersen Fox 与室内设计师 David Mann 合作打造。其独特的瓶形轮廓在 TriBeCa 区域极具辨识度，风格现代流畅，是城市天际线的闪耀明星。
+    </p>
+
+    <h2>建筑特色</h2>
+    <ul>
+        <li>高层住宅可俯瞰曼哈顿、哈德逊河与自由女神像</li>
+        <li>三层豪华配套空间包括 SPA、50 英尺泳池、健身中心、儿童乐园、私人放映厅</li>
+        <li>玻璃幕墙带来自然光充沛与极致视野</li>
+    </ul>
+
+    <h2>周边配套</h2>
+    <p>
+        步行可至世贸中心、布鲁克菲尔德广场、高端购物与地铁交通枢纽，生活便利且充满国际都市感。
+    </p>
+
+    <h2>英文版 / English Version</h2>
+    <h1>111 Murray Street</h1>
+    <p><strong>Address:</strong> 111 Murray Street, New York, NY 10007</p>
+
+    <h2>Introduction</h2>
+    <p>
+        111 Murray Street is a striking tower designed by KPF and interior designer David Mann. Its curved, sculptural silhouette rises elegantly over Tribeca, commanding attention in Manhattan’s skyline.
+    </p>
+
+    <h2>Features</h2>
+    <ul>
+        <li>Panoramic views of Manhattan, the Hudson River, and the Statue of Liberty</li>
+        <li>Three floors of amenities: spa, 50-foot pool, fitness center, kids’ playroom, and screening room</li>
+        <li>Floor-to-ceiling glass windows maximize sunlight and views</li>
+    </ul>
+
+
+
+<div id="footer"></div>
+<script>
+  fetch("/components/footer.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("footer").innerHTML = html;
+    });
+</script>
+
+</body>
+</html>

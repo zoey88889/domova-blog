@@ -1,0 +1,59 @@
+<!-- /price/price-guide.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>NYC Property Price Guide | Domova</title>
+  <meta name="description" content="Discover NYC real estate prices by neighborhood, property type, and buyer profile. Domova's luxury home insights.">
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <header>
+    <h1>🏷 NYC Property Price Guide</h1>
+    <p style="color:#555; text-align:center;">Understand the price ranges across Manhattan, Brooklyn & beyond — tailored for international buyers & investors.</p >
+  </header>
+
+  <main style="max-width: 800px; margin: 2rem auto; padding: 1rem;">
+    <h2>💼 Price by Neighborhood</h2>
+    <p>Upper East Side: $1,500–$3,500 per sqft<br>
+       Tribeca / SoHo: $2,000–$4,500 per sqft<br>
+       Hudson Yards & CPT: $3,000–$6,000+ per sqft</p >
+
+    <h2>🏠 Price by Property Type</h2>
+    <ul>
+      <li>Studio: $600K–$1.2M</li>
+      <li>1BR: $900K–$1.8M</li>
+      <li>2BR: $1.5M–$3.5M</li>
+      <li>Penthouse: $5M–$80M+</li>
+    </ul>
+
+    <h2>🌎 Tips for International Buyers</h2>
+    <p>Foreign nationals can buy NYC property without restriction. Pricing depends on cash vs mortgage, legal/tax setup, and building policies.</p >
+
+    <div style="margin-top:2rem;">
+      <a href="/price/cost-breakdown.html" style="text-decoration:none; background:#0074D9; color:#fff; padding:10px 20px; border-radius:8px;">📊 View Cost Breakdown</a >
+    </div>
+  </main>
+
+
+
+
+  <footer>
+
+  <p>&copy; 2025 Domova Media</p >
+    </div>
+ <div class="disclaimer">
+  📌免责声明 / Disclaimer：<br><p><a href="/disclaimer.html">Disclaimer</a ></p >
+
+
+<div id="footer"></div>
+<script>
+  fetch("/components/footer.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("footer").innerHTML = html;
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SoulSync 推荐页 | Domova</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <style>
+    body { font-family: 'Helvetica Neue', sans-serif; padding: 2rem; background: #f9f9f9; }
+    h1 { text-align: center; color: #333; }
+    label, select { display: block; margin: 1rem auto; font-size: 1rem; max-width: 400px; }
+    .btn { background: #6a5acd; color: #fff; border: none; padding: 10px 20px; border-radius: 8px; cursor: pointer; }
+    .result { margin-top: 2rem; text-align: center; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h1>🧭 SoulSync 购房灵魂匹配器</h1>
+  <label>
+    你此刻的情绪是？
+    <select id="mood">
+      <option value="peace">渴望安静与治愈</option>
+      <option value="bold">想要突破与成长</option>
+      <option value="lux">追求顶奢视野与身份</option>
+    </select>
+  </label>
+
+  <label>
+    偏好的风格？
+    <select id="style">
+      <option value="modern">现代简约</option>
+      <option value="classic">复古优雅</option>
+      <option value="artsy">艺术感强</option>
+    </select>
+  </label>
+
+  <label>
+    预算范围（USD）：
+    <select id="budget">
+      <option value="1M">80–150 万</option>
+      <option value="2M">150–350 万</option>
+      <option value="5M">500 万以上</option>
+    </select>
+  </label>
+
+  <div style="text-align:center;">
+    <button class="btn" onclick="recommend()">✨ 生成推荐楼盘</button>
+  </div>
+
+  <div class="result" id="result"></div>
+
+  <script>
+    function recommend() {
+      const mood = document.getElementById("mood").value;
+      const style = document.getElementById("style").value;
+      const budget = document.getElementById("budget").value;
+      let result = "🏠 推荐楼盘：";
+
+      if (mood === "peace" && style === "modern") result += "One Manhattan Square 或 Sutton Tower";
+      else if (mood === "lux") result += "Central Park Tower 或 One57";
+      else if (style === "artsy") result += "Lantern House / 130 William";
+      else result += "Domino Square / Brooklyn Tower";
+
+      document.getElementById("result").innerText = result + " ✨";
+    }
+  </script>
+</body>
+</html>

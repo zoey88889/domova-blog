@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Domova Newsroom</title>
+  <style>
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      padding: 2rem;
+      background: #fafafa;
+      color: #1a1a1a;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .news-container {
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .news-item {
+      background: white;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      margin-bottom: 1.5rem;
+      transition: 0.3s ease;
+    }
+
+    .news-item:hover {
+      transform: translateY(-2px);
+      background-color: #f8f8ff;
+    }
+
+    .news-item h2 {
+      font-size: 20px;
+      margin-bottom: 0.5rem;
+    }
+
+    .news-item p {
+      font-size: 15px;
+      color: #555;
+    }
+
+    .read-more {
+      margin-top: 0.8rem;
+      display: inline-block;
+      font-size: 14px;
+      color: #0074D9;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🗞 Domova Real Estate News</h1>
+
+  <div class="news-container">
+    <div class="news-item">
+      <h2>📈 NYC Penthouse Market Trends in 2025</h2>
+      <p>The luxury skyline shifts as buyers seek exclusivity, artful design, and tax-efficient locations...</p >
+      <a href="/news/vol1.html" class="read-more">Read More →</a >
+    </div>
+    <section class="news-list">
+  <article class="news-item">
+    <h2><a href="/news/vol2.html">🏙 NYC Luxury Market Overview 2025</a ></h2>
+    <p>2025年纽约豪宅市场分析报告，总结交易热区、海外买家趋势与税费政策变化。</p >
+  </article>
+
+  <article class="news-item">
+    <h2><a href="/news/vol3.html">💰 The True Costs of Buying a NYC Penthouse</a ></h2>
+    <p>想拥有一套纽约顶层豪宅？你必须了解的购置成本、税费结构与隐藏开支全解析。</p >
+  </article>
+
+  <article class="news-item">
+    <h2><a href="/news/vol4.html">📊 Foreign Buyer Guide: Buy Luxury Homes in NYC</a ></h2>
+    <p>国际买家纽约置业指南，教你如何用护照买房、贷款流程与签约避坑攻略。</p >
+  </article>
+
+  <article class="news-item">
+    <h2><a href="/news/vol5.html">🧼 Luxury Condo Maintenance 101 | 奢华公寓的日常维护指南</a ></h2>
+    <p>从前台服务到水管保养，从保洁频率到智能系统升级，一文搞懂 NYC 奢华公寓的维护细节。</p >
+  </article>
+
+  <article class="news-item">
+    <h2><a href="/news/vol6.html">📦 NYC Closing Process & Timeline | 纽约房产交易流程全览</a ></h2>
+    <p>购房需知！从签合同到交房钥匙，每个步骤和关键时间点都帮你列清楚了。</p >
+      
+  </article>
+
+  <article class="news-item">
+    <h2><a href="/news/vol7.html">🤖 AI 美学风暴来袭：2026年豪宅的“智能灵魂”五大趋势</a ></h2>
+    <p>AI 家居助理如何变成艺术装置？带你穿越 2026 的五大家居智能设计趋势。</p >
+  </article>
+   <div class="news-item">
+      <h2>🏙 53W53 Featured in International Architecture Digest</h2>
+      <p>The MoMA tower designed by Jean Nouvel has become an icon for global investors looking into NYC real estate...</p >
+      <a href="/news/vol8.html" class="read-more">Read More →</a >
+    </div>
+</section>
+  </div>
+
+
+
+<div id="footer"></div>
+<script>
+  fetch("/components/footer.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("footer").innerHTML = html;
+    });
+</script>
+
+</body>
+</html>

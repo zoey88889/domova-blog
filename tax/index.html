@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart Tax Savings Menu | Domova</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: "Helvetica Neue", sans-serif;
+      background-color: #f8f8f8;
+      color: #333;
+      padding: 2rem;
+    }
+
+    .dropdown-menu {
+      background: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      max-width: 960px;
+      margin: auto;
+      padding: 2rem;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+    }
+
+    .dropdown-menu h3 {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+      color: #1a1a1a;
+    }
+
+    .tax-card {
+      margin-bottom: 2rem;
+      padding: 1.5rem;
+      background-color: #fefefe;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .tax-card h3 {
+      color: #0055cc;
+      margin-bottom: 0.5rem;
+    }
+
+    .tax-card p {
+      margin: 0.5rem 0 1rem 0;
+    }
+
+    .tax-card a {
+      display: inline-block;
+      background-color: #0055cc;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .tax-card a:hover {
+      background-color: #003c99;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      font-size: 14px;
+      color: #999;
+    }
+
+    .disclaimer {
+      font-size: 13px;
+      color: #888;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="dropdown-menu">
+    <h3>🧾 Smart Tax Savings | 税务优惠知识导航</h3>
+
+    <section>
+      <h2 style="text-align:center; font-size: 2rem; margin-bottom: 2rem;">🌆 NYC 地税减免小课堂</h2>
+
+      <div class="tax-card">
+        <h3>🏙️ Overview of NYC Tax Programs</h3>
+        <p><strong>纽约购房税收总览</strong> ｜ 包含 421a / J-51 / STAR 项目等，掌握关键税收减免路径。</p >
+        <a href="/tax/overview.html">Learn More →</a >
+      </div>
+
+      <div class="tax-card">
+        <h3>💼 Condo Buyer’s Tax Benefits</h3>
+        <p><strong>公寓买家地税减免</strong> ｜ 买新建公寓？看看怎么合法节省每年上万美元地税。</p >
+        <a href="/tax/benefits.html">Learn More →</a >
+      </div>
+      
+       <div class="tax-card">
+        <h3>📊 Investor Tax Strategies </h3>
+        <p><strong> 投资人节税三大技巧</strong> ｜如何利用税务策略节省房产税  </p >
+        <a href="/tax/strategy-investor.html">Learn More →</a >
+      </div>
+
+      <div class="tax-card">
+        <h3>📉 How to Save on Property Taxes</h3>
+        <p><strong>投资人/屋主专属</strong> ｜ 用 LLC / 折旧 / 1031 换房等方式实现地税节省。</p >
+        <a href="/tax/1031.html">Learn More →</a >
+      </div>
+
+
+      <div class="tax-card">
+        <h3>📊 Smart Savings: NYC Real Estate Tax Benefits</h3>
+        <p><strong>首次买房 / 投资人 / 屋主专属</strong> ｜ 纽约地产减税小知识｜节省税务，智慧置业</p >
+        <a href="/tax/421a.html">Learn More →</a >
+      </div>
+  
+      <div class="tax-card">
+        <h3>📊  NYC Property Tax Tips ：Top 3 NYC Tax Incentive Programs</h3>
+        <p><strong>  NYC 地产地税优惠 科普系列 |</strong> ｜三大常见减税优惠项目简介｜</p >
+        <a href="/tax/tax-saving.html">Learn More →</a >
+      </div>
+    </section>
+  </div>
+
+
+
+<div id="footer"></div>
+<script>
+  fetch("/components/footer.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("footer").innerHTML = html;
+    });
+</script>
+
+</body>
+</html>

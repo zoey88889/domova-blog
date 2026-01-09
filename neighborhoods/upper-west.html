@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Upper West Side | Domova NYC</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <style>
+    body {
+      font-family: "Helvetica Neue", sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #1a1a1a;
+    }
+    header {
+      background-color: #f5f5f5;
+      padding: 2.5rem 1rem;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+    }
+    h1 {
+      margin-bottom: 0.5rem;
+      font-size: 2.8rem;
+    }
+    h2 {
+      color: #888;
+      font-weight: 400;
+    }
+    section {
+      padding: 2rem;
+      max-width: 820px;
+      margin: auto;
+    }
+    .block {
+      margin-bottom: 2.5rem;
+    }
+    .highlight:hover {
+      background-color: #f0e6ff;
+      transition: background-color 0.3s ease;
+      border-radius: 6px;
+      padding: 0.5rem;
+    }
+    #map {
+      height: 400px;
+      width: 100%;
+      border-radius: 12px;
+      margin-top: 1rem;
+      border: 1px solid #ddd;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.85rem;
+      color: #666;
+      padding: 2rem 1rem 1rem;
+      border-top: 1px solid #ddd;
+      background: #fff;
+    }
+    footer a {
+      color: #555;
+      text-decoration: none;
+    }
+    footer a:hover {
+      color: #000;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>⭐ Upper West Side</h1>
+    <h2>“文艺灵魂的静谧绿洲”</h2>
+  </header>
+
+  <section>
+    <div class="block highlight">
+      <h3>English Overview</h3>
+      <p>
+        The Upper West Side is a leafy, cultured haven nestled between Central Park and the Hudson River.
+        It’s where artists, academics, and old New York souls dwell — a neighborhood rich in pre-war brownstones,
+        classical music, and intellectual flair. It’s slower, quieter, and full of timeless charm.
+      </p >
+    </div>
+
+    <div class="block highlight">
+      <h3>中文赏析</h3>
+      <p>
+        上西区，是一位披着长风衣的文艺灵魂。它被中央公园与哈德逊河温柔环绕，
+        孕育出优雅的古老公寓、咖啡馆里的剧作家，以及图书馆中翻阅世界的人们。
+        这里，是纽约的绿意后花园，也是知识分子的隐秘栖息地。
+      </p >
+    </div>
+
+    <div class="block">
+      <h3>Map: Location of Upper West Side</h3>
+      <div id="map"></div>
+    </div>
+  </section>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script>
+    const map = L.map('map').setView([40.7870, -73.9754], 13); // Upper West Side coords
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+
+    L.marker([40.7870, -73.9754])
+      .addTo(map)
+      .bindPopup('Upper West Side')
+      .openPopup();
+  </script>
+
+<div id="footer"></div>
+<script>
+  fetch("/components/footer.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("footer").innerHTML = html;
+    });
+</script>
+
+</body>
+</html>

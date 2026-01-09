@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Disclaimer | Domova Luxury Real Estate</title>
+  <link rel="stylesheet" href="styles.css"> <!-- 若你有全站 CSS -->
+  <style>
+ /* Disclaimer Section Styles */
+.disclaimer-container {
+  background-color: #f5f5f5; /* 柔灰色背景 */
+  padding: 40px 20px;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #333;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  border-top: 1px solid #ddd;
+}
+
+.disclaimer-container h1,
+.disclaimer-container h2,
+.disclaimer-container h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+.disclaimer-container p {
+  margin-bottom: 16px;
+}
+
+.disclaimer-container em {
+  font-style: italic;
+  color: #666;
+}
+
+.disclaimer-container ul {
+  margin-left: 20px;
+  list-style-type: disc;
+}
+
+.disclaimer-note {
+  background-color: #ffffff;
+  border-left: 4px solid #9999ff;
+  padding: 12px 16px;
+  margin: 20px 0;
+  color: #444;
+  font-size: 13.5px;
+}
+
+@media (max-width: 768px) {
+  .disclaimer-container {
+    padding: 20px 15px;
+    font-size: 13px;
+  }
+
+  .disclaimer-container h1 {
+    font-size: 18px;
+  }
+}
+  </style>
+
+</head>
+<div class="disclaimer-container">
+  <h1>Disclaimer ｜免责声明</h1>
+  <p>ENGLISH</p >
+  <p>Domova.netlify.app is currently under development and serves as a preview showcase of architectural appreciation, lifestyle aesthetics, and cultural perspectives related to New York City’s luxury real estate.
+  </p >
+  <p>
+    All content on this site — including but not limited to images, descriptions, neighborhood guides, and featured properties — is presented for informational and inspirational purposes only. It does not constitute an offer to sell, lease, or recommend any specific real estate transactions.
+  </p >
+  <p>
+    Domova.netlify.app is not a licensed real estate brokerage platform. For actual transactions, please consult with a licensed real estate professional. We do not guarantee the accuracy, completeness, or real-time availability of listings or data.
+  </p >
+  </p >
+    All property information presented on this platform is collected from publicly available sources, including developer brochures, MLS databases, and online listings. Domova does not represent the exclusive agency for any featured property unless otherwise specified. All intellectual property rights belong to the original sources and listing agents.
+  </p >
+  <p>
+    All original content is the intellectual property of Domova Media. Unauthorized commercial use, reproduction, or redistribution is strictly prohibited.
+  </p >
+  </p >
+
+<body>
+     <div class="disclaimer-note">
+    📌 <strong>Pricing Note:</strong> The price ranges listed on this site are approximate and subject to change. 
+    They do not represent firm offers or guarantees of availability or purchase price. 
+    For current pricing, availability, and negotiation terms, please contact a licensed real estate professional. 
+    Domova is not the exclusive agent nor does it guarantee the listed price or terms unless explicitly stated.
+  </p >
+  </div>
+
+  <p>中文</p >
+  <p>Domova.netlify.app 目前仍在建设阶段，页面展示内容仅作为对纽约顶级豪宅的建筑赏析、生活方式灵感与城市文化导览之用。
+  </p >
+  <p>
+    本网站所展示的所有信息（包括但不限于图片、描述、社区介绍与房源赏析）仅供信息分享与视觉欣赏，不构成任何销售、租赁或投资建议。
+  </p >
+  <p>
+    本平台并非持牌房地产交易网站，若有实际交易需求，请联系持牌地产专业人士。我们不对房源信息、价格或数据的准确性、完整性或实时性做出任何保证。
+  </p >
+  </p >
+  本平台所展示的房产信息，均来源于开发商楼书、MLS 房源数据库及公开网络资源。如无特别注明，Domova 并非所列房源的独家代理机构。所有版权归原始开发商与房源代理所有。
+  <p>
+  </p >
+    本网站所有原创内容版权归 Domova Media 所有，未经授权禁止任何商业使用、复制或传播。
+  </p >
+  <div class="disclaimer-note">
+    📌 <strong>价格说明：</strong>本网站所示价格区间为估算值，仅供参考，可能随市场、开发商、税费、构造等因素变动。并不构成固定报价、可售保证或签约价格。
+    如需了解实时价格、可售情况及谈判条款，请联系持牌地产经纪。除非另有明确说明，Domova 并非该房源的独家代理机构，也不保证所示价格或条款。
+  </div>
+
+</section>
+  <p class="note">© 2025 Domova Media. All rights reserved.</p >
+
+<div id="footer"></div>
+<script>
+  fetch("/components/footer.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("footer").innerHTML = html;
+    });
+</script>
+
+</body>
+</html>

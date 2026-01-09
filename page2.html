@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Luxury Real Estate</title>
+  <style>
+    .featured-properties {
+  padding: 40px 20px;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+.property-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin: 20px auto;
+  max-width: 600px;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.property-card:hover {
+  transform: scale(1.02);
+}
+
+.property-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.property-card h3 {
+  font-size: 1.3em;
+  color: #222;
+  margin-bottom: 8px;
+}
+
+.property-card p {
+  color: #666;
+  font-size: 1em;
+  margin-bottom: 12px;
+}
+
+.view-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #1d1d1d;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.view-btn:hover {
+  background: #4a4a4a;
+}
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Georgia', serif;
+      background: url('images/skyline.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #f5f5f5;
+    }
+
+    nav {
+      display: flex;
+      justify-content: flex-end;
+      gap: 40px;
+      padding: 30px 50px;
+      font-family: 'Helvetica Neue', sans-serif;
+      font-size: 14px;
+      text-transform: uppercase;
+      color: #e8e8e8;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: inherit;
+      letter-spacing: 1px;
+    }
+
+    .hero {
+      text-align: left;
+      padding: 120px 80px;
+    }
+
+    .hero h1 {
+      font-size: 64px;
+      line-height: 1.1;
+      color: rgba(245, 245, 245, 0.9);
+      margin: 0;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    }
+
+    .hero a.button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 28px;
+      font-size: 14px;
+      text-transform: uppercase;
+      background: transparent;
+      border: 1px solid #f5f5f5;
+      color: #f5f5f5;
+      letter-spacing: 1px;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    
+    .features {
+      display: flex;
+      justify-content: space-around;
+      background: rgba(20, 15, 10, 0.8);
+      padding: 40px 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      font-size: 14px;
+    }
+
+    .features div {
+      color: #ddd;
+      max-width: 180px;
+    }
+
+    .features h3 {
+      color: #fff;
+      font-size: 16px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .features a {
+      color: #ccc;
+      text-decoration: underline;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+
+
+</style>
+  <!-- 可以继续添加更多楼盘 -->
+</section>
+  <!-- 顶部导航 -->
+  <nav>
+    <a href="/neighborhoods/index.html">Neighborhoods</a >
+    <a href="/price.html">Price</a >
+    <a href="/types.html">Property Types</a >
+    <a href="/news/news.html">News</a >
+    <a href="/about.html">About</a ></li>
+    <!-- 其他导航项 -->
+  </ul>
+</nav>
+  <!-- 主视觉区 -->
+  <div class="hero">
+    <h1>LUXURY<br>REAL ESTATE</h1>
+    <a class="button" href="/guides/guide_how_to_buy.html">View Guide</a >
+  </div>
+
+  <!-- 底部栏目 -->
+  <div class="features">
+    <div>
+      <h3>FEATURED PROPERTIES</h3>
+      <p>New developments by renowned builders</p >
+      <a href="/vols/vol1-cpt.html">See Central Park Tower</a >
+    </div>
+    <div>
+      <h3>WATERFRONT HOMES</h3>
+      <p>Spectacular views and reduced taxes</p >
+      <a href="/vols/vol4-dominosquare.html">Explore Domino Square</a >
+    </div>
+    <div>
+      <h3>PENTHOUSES</h3>
+      <p>The finest New York luxury residences</p >
+      <a href="/guides/penthouse-definition.html">What is a Penthouse?</a >
+    </div>
+     <div>
+      <h3>SMART TAX SAVINGS</h3>
+      <p>Condo Buyer’s Tax Benefits  Learn how NYC condo buyers can save big with tax abatements</p >
+      <a href="/tax/index.html">Learn More</a >
+    </div>
+  </div>
+
+
+<div id="footer"></div>
+<script>
+  fetch("/components/footer.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("footer").innerHTML = html;
+    });
+</script>
+
+</body>
+
+<section class="featured-properties">
+  <h2> Featured Properties 精选楼盘</h2>
+
+  <!-- The Kent -->
+<div class="property-card">
+  <img src="images/kent.jpg" alt="The Kent">
+  <h3>The Kent | 上东区温柔巨塔</h3>
+  <p>Timeless elegance on the Upper East Side. Family-friendly and classically modern.</p >
+  <a href="vols/vol.kent.html" class="view-btn">View Details</a >
+</div>
+
+<!-- Trump Tower (First Ave) -->
+<div class="property-card">
+  <img src="images/trumptower.jpg" alt="Trump Tower (First Ave)">
+  <h3>Trump Tower (First Ave) | 经典地标川普塔</h3>
+  <p>A commanding presence with cityscape views. Classic Manhattan glamour.</p >
+  <a href="/vols/vol.trumptower.html" class="view-btn">View Details</a >
+</div>
+
+<!-- Leonard Building -->
+<div class="property-card">
+  <img src="images/leonard.jpg" alt="Leonard Building">
+  <h3>Leonard Building | 曼哈顿之冠</h3>
+  <p>Crowning Tribeca with sculpted luxury and architectural grace.</p >
+  <a href="/vols/vol.leonard.html" class="view-btn">View Details</a >
+</div>
+
+<!-- One Wall Street -->
+<div class="property-card">
+  <img src="images/onewallstreet.jpg" alt="One Wall Street">
+  <h3>One Wall Street | 金融区的红色之心</h3>
+  <p>An Art Deco revival with modern interiors, at the heart of the Financial District.</p >
+  <a href="/vols/vol.onewall.html" class="view-btn">View Details</a >
+</div>
+
+<!-- One Park Row -->
+<div class="property-card">
+  <img src="images/oneparkrow.jpg" alt="One Park Row">
+  <h3>One Park Row | 市政厅旁的现代感宅邸</h3>
+  <p>Where civic tradition meets contemporary comfort near City Hall.</p >
+  <a href="/vols/vol.oneparkrow.html" class="view-btn">View Details</a >
+</div>
+
+<!-- 15 Central Park West -->
+<div class="property-card">
+  <img src="images/15cpw.jpg" alt="15 Central Park West">
+  <h3>15 Central Park West | 经典双塔豪宅</h3>
+  <p>The gold standard of luxury living on the park’s edge.</p >
+  <a href="/vols/vol.15cpw.html" class="view-btn">View Details</a >
+</div>
+
+<!-- Waldorf Astoria Residences -->
+<div class="property-card">
+  <img src="images/waldorf.jpg" alt="Waldorf Astoria Residences">
+  <h3>Waldorf Astoria Residences | 华尔道夫传奇公馆</h3>
+  <p>A historic icon reimagined as elite residences.</p >
+  <a href="/vols/vol.waldorf.html" class="view-btn">View Details</a >
+</div>
+
+<!-- One Central Park West -->
+<div class="property-card">
+  <img src="images/ocpw.jpg" alt="One Central Park West">
+  <h3>One Central Park West | 中央公园西一号</h3>
+  <p>Commanding Central Park views from the skyline’s edge.</p >
+  <a href="/vols/vol.ocpw.html" class="view-btn">View Details</a >
+</div>
+
+<!-- The Cortland -->
+<div class="property-card">
+  <img src="images/cortland.jpg" alt="The Cortland">
+  <h3>The Cortland | 切尔西的优雅立面</h3>
+  <p>Classic brick meets modern serenity in West Chelsea.</p >
+  <a href="/vols/vol.cortland.html" class="view-btn">View Details</a >
+</div>
+
+<!-- Claremont Hall -->
+<div class="property-card">
+  <img src="images/claremont.jpg" alt="Claremont Hall">
+  <h3>Claremont Hall | 哥大旁书卷气住宅</h3>
+  <p>Columbia University's quiet neighbor, with gothic charm and skyline poise.</p >
+  <a href="/vols/vol.claremont.html" class="view-btn">View Details</a >
+</div>
+
+<!-- 111 Murray Street -->
+<div class="property-card">
+  <img src="images/111murray.jpg" alt="111 Murray Street">
+  <h3>111 Murray Street | 摩天曲线女神</h3>
+  <p>A sculpted glass tower dancing with the clouds above Tribeca.</p >
+  <a href="/vols/vol.111murray.html" class="view-btn">View Details</a >
+</div>
+
+<!-- 70 Vestry Street -->
+<div class="property-card">
+  <img src="images/70vestry.jpg" alt="70 Vestry Street">
+  <h3>70 Vestry Street | 水岸绅士公寓</h3>
+  <p>Riverfront elegance and private luxury in Tribeca’s quiet curve.</p >
+  <a href="/vols/vol.70vestry.html" class="view-btn">View Details</a >
+<!-- 🔘 分页导航按钮 -->
+<div class="pagination">
+  <a href="index.html" class="page-btn">1</a >
+  <a href="page2.html" class="page-btn">2</a >
+  <a href="page3.html" class="page-btn">3</a >
+  <a href="page4.html" class="page-btn">4</a >
+  <a href="page5.html" class="page-btn">5</a >
+</div>
+
+<style>
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 3rem auto 2rem;
+  gap: 0.6rem;
+}
+
+.page-btn {
+  display: inline-block;
+  padding: 8px 14px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.page-btn:hover {
+  background-color: #f0f8ff;
+  border-color: #9370db;
+  color: #000;
+}
+
+.page-btn.active {
+  background-color: #9370db;
+  color: #fff;
+  border-color: #9370db;
+  pointer-events: none;
+}
+</style>
+</section>
+
+</body>
+<!-- Dodobot Floating Widget -->
+<style>
+#dodobot-widget {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 220px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+  padding: 15px;
+  z-index: 9999;
+  transition: all 0.3s ease-in-out;
+}
+#dodobot-widget:hover {
+  transform: scale(1.03);
+}
+#dodobot-avatar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+#dodobot-avatar img {
+  width: 36px;
+  margin-right: 10px;
+}
+#dodobot-content a {
+  display: block;
+  margin: 6px 0;
+  color: #0066cc;
+  text-decoration: none;
+  border-left: 3px solid transparent;
+  padding-left: 6px;
+  transition: all 0.2s ease;
+}
+#dodobot-content a:hover {
+  color: #0050a3;
+  border-color: #ccc;
+}
+</style>
+<!-- Dodobot 弟弟图标 -->
+<div style="position: fixed; bottom: 20px; right: 20px; z-index: 999;">
+    <img src="images/dodobot.gif" alt="Dodobot" width="80" style="border-radius: 50%; box-shadow: 0 0 10px rgba(255,192,203,0.8);">
+  </a >
+</div>
+<!-- ✅ Dodobot Widget 区块（固定展示） -->
+<div id="dodobot-widget">
+  <div id="dodobot-avatar">
+    <img src="images/dodobot.gif" alt="Dodobot" width="80" style="border-radius: 50%; box-shadow: 0 0 10px rgba(255,192,203,0.8);">
+    <strong>Hi，我是Dodobot 弟弟 智能回答小助手！</strong>
+  </div>
+  <div id="dodobot-content">
+    <a href="about.html">📞 联系方式 & 关于我们</a >
+    <a href="/price.html">💰 购房价格与税费攻略</a >
+    <a href="/news/news.html">📰 最新房地产新闻</a >
+    <a href="/guides/guide_how_to_buy.html">📘 外国人购房流程</a >
+    <a href="/visit.html">📅Visit & Inquiry 参观和问询</a >
+    <a href="/neighborhoods/index.html">🌆 社区介绍 & 区域推荐</a >
+    <a href="/index.html">🏙️ 精选豪宅推荐</a >
+  </div>
+</div>
+
+<!-- ✅ Dodobot Chatbox 弹窗区块 -->
+<div id="chatbox" style="display:none;max-width:600px;position:fixed;bottom:100px;right:20px;padding:20px;background:#fff;border-radius:10px;border:1px solid #ddd;box-shadow:0 5px 20px rgba(0,0,0,0.05);z-index:9999;">
+  <img src="images/dodobot.gif" alt="Dodobot" width="80" style="border-radius: 50%; box-shadow: 0 0 10px rgba(255,192,203,0.8);">
+  <div id="messages" style="height:250px;overflow-y:auto;border:1px solid #ccc;padding:10px;margin:20px 0;"></div>
+  <div style="display:flex;gap:10px;">
+    <input type="text" id="inputBox" placeholder="问我任何事..." style="flex:1;padding:10px;border:1px solid #ccc;border-radius:5px;">
+    <button id="sendBtn" style="padding:10px 20px;border:none;background:#222;color:white;border-radius:5px;cursor:pointer;">发送</button>
+  </div>
+</div>
+
+<!-- ✅ 浮动按钮 -->
+<div id="dodobot-button" style="position:fixed;bottom:20px;right:20px;background:#fff;border:2px solid #ddd;border-radius:50%;width:60px;height:60px;font-size:28px;text-align:center;line-height:60px;box-shadow:0 4px 10px rgba(0,0,0,0.1);cursor:pointer;z-index:9999;">
+  🤖
+</div>
+<!-- ✅ JS逻辑绑定 -->
+<script src="responses_extra.js"></script>
+<script src="chatbot.js"></script>
+
+</html>

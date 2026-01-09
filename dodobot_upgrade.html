@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>Dodobot 🤖 弟弟机器人</title>
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; padding: 20px; background: #f2f2f2; }
+    #chatbox { width: 100%; max-width: 600px; margin: auto; background: #fff; border: 1px solid #ddd; padding: 20px; border-radius: 10px; }
+    #messages { height: 300px; overflow-y: auto; border: 1px solid #ccc; padding: 10px; margin-bottom: 15px; background: #fefefe; border-radius: 5px; }
+    .user { text-align: right; color: #0066ff; margin: 5px; }
+    .bot  { text-align: left; color: #333; margin: 5px; }
+    #inputBox { width: calc(100% - 70px); padding: 10px; border-radius: 5px; border: 1px solid #ccc; }
+    #sendBtn { width: 60px; padding: 10px; background: #0066ff; color: white; border: none; border-radius: 5px; cursor: pointer; }
+    #sendBtn:hover { background: #0047b3; }
+  </style>
+</head>
+<body>
+  <h2>🤖 Dodobot - Domova 弟弟机器人</h2>
+  <div id="chatbox">
+    <div id="messages"></div>
+    <input type="text" id="inputBox" placeholder="问我吧…" />
+    <button id="sendBtn">发送</button>
+  </div>
+
+  <script>
+    const responses = {
+      "联系方式": "你可以在「关于我」页面找到我的联系方式哦～ 👉 <a href='about.html'>点击这里</a>",
+      "怎么联系你": "我在「关于我」页面等你～💬 👉 <a href='about.html'>点击查看</a>",
+      "买房": "我们有很多精选豪宅、公寓，欢迎告诉我你喜欢的风格，我来推荐 ✨",
+      "房源": "我们覆盖纽约主要区域的优质房源 👉 <a href='neighborhoods/index.html'>点击查看社区</a>",
+      "SoHo": "SoHo 是艺术与生活的中心～👉 <a href='neighborhoods/index.html'>查看所有社区</a>",
+      "Upper East": "Upper East 是优雅经典的代表～🗽 <a href='neighborhoods/index.html'>点我看地图</a>",
+      "费用": "想了解费用和流程？看这里👉 <a href='guide/index.html'>购房指南</a>",
+      "外国人买房": "外国人买房完全没问题～流程我都准备好了👉 <a href='guide/index.html'>购房指南</a>",
+      "交易流程": "我们整理了详细流程👉 <a href='guide/index.html'>戳这里</a>",
+      "减税": "开发商优惠 + 税费减免攻略 👉 <a href='news.html'>优惠页面</a>",
+      "显化卡": "「你已经配得上你想要的一切。」💫 👉 <a href='dream.html'>点击抽卡</a>",
+      "白噪音": "⏯️播放「星海白噪音 30分钟」～适合入眠 💤",
+      "你是谁": "我是 Dodobot 🤖，Domova 的AI弟弟机器人，帮你解答房产和宇宙的一切～"
+    };
+
+    const messagesDiv = document.getElementById("messages");
+    const inputBox = document.getElementById("inputBox");
+    const sendBtn = document.getElementById("sendBtn");
+
+    sendBtn.addEventListener("click", () => {
+      const userText = inputBox.value.trim();
+      if (!userText) return;
+      addMessage(userText, "user");
+      inputBox.value = "";
+
+      let reply = "抱歉😊我还在学习中，你换个问法试试？";
+      for (let key in responses) {
+        if (userText.includes(key)) {
+          reply = responses[key];
+          break;
+        }
+      }
+
+      setTimeout(() => {
+        addMessage(reply, "bot");
+      }, 300);
+    });
+
+    function addMessage(text, sender) {
+      const div = document.createElement("div");
+      div.className = sender;
+      div.innerHTML = text;
+      messagesDiv.appendChild(div);
+      messagesDiv.scrollTop = messagesDiv.scrollHeight;
+    }
+  </script>
+
+<div id="footer"></div>
+<script>
+  fetch("/components/footer.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("footer").innerHTML = html;
+    });
+</script>
+
+</body>
+</html>

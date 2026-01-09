@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hewlett Bay Park| Domova</title>
+  <style>
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #fdfdfd;
+      margin: 0;
+      padding: 0;
+      color: #1a1a1a;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    section {
+      padding: 1rem 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    a.back-link {
+      display: block;
+      text-align: center;
+      padding: 2rem;
+      color: #0074D9;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+<section class="neighborhood-intro">
+  <h1>🌅 Hewlett Bay Park</h1>
+  <p><strong>CN｜细腻而低调的富人社区，隐藏的长岛南岸宝石</strong><br>
+  Hewlett Bay Park 融合了郁郁葱葱的自然景观与高级生活方式，是喜欢私密与低调奢华人群的秘密首选。</p >
+  <p><strong>EN｜A hidden gem on the South Shore with serene charm</strong><br>
+  With tree-lined roads, spacious homes, and a tight-knit elite community, Hewlett Bay Park offers a refined suburban atmosphere minutes from the city—but worlds away in spirit.</p >
+</section>
+
+<div id="footer"></div>
+<script>
+  fetch("/components/footer.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("footer").innerHTML = html;
+    });
+</script>
+
+</body>
+
+</html>

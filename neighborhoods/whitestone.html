@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Whitestone | Domova</title>
+  <style>
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #fdfdfd;
+      margin: 0;
+      padding: 0;
+      color: #1a1a1a;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    section {
+      padding: 1rem 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    a.back-link {
+      display: block;
+      text-align: center;
+      padding: 2rem;
+      color: #0074D9;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🌸 Whitestone</h1>
+  <section>
+    <p><strong>English Overview:</strong><br>
+    Tucked in northeastern Queens, Whitestone offers a rare blend of suburban tranquility and urban convenience. With tree-lined streets, waterfront properties, and a strong sense of community, it’s a favorite for multi-generational households. Known for its large homes and peaceful vibe, Whitestone provides easy access to bridges, highways, and airports, making it a quiet yet connected haven.</p >
+  </section>
+
+  <h2>🌸 怀特斯通（Whitestone）社区介绍</h2>
+  <section>
+    <p><strong>中文介绍：</strong><br>
+    怀特斯通位于皇后区东北角，是一个极具人情味和宁静氛围的近郊社区。街道两旁绿树成荫，住宅多为独栋别墅，有不少面水的优质物业。交通便利，邻近大桥与高速通道，是不少多代同堂家庭的首选居所。这里保留了纽约少有的“乡村感”。</p >
+  </section>
+
+  <a href="index.html" class="back-link">← Back to Neighborhoods</a >
+
+<div id="footer"></div>
+<script>
+  fetch("/components/footer.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("footer").innerHTML = html;
+    });
+</script>
+
+</body>
+
+</html>

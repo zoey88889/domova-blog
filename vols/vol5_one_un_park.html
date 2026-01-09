@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<link rel="stylesheet" href="../styles/styles.css">
+    <meta charset="UTF-8">
+    <title>VOL.5｜One United Nations Park</title>
+    <style>
+        body {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            margin: 40px;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.7;
+        }
+        h1 {
+            text-align: center;
+            color: #000;
+        }
+        h2 {
+            margin-top: 40px;
+            color: #555;
+        }
+        .section {
+            margin-bottom: 50px;
+        }
+        .disclaimer {
+            font-size: 0.9em;
+            color: #777;
+            border-top: 1px dashed #ccc;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>VOL.5｜One United Nations Park</h1>
+    <h2>「玻璃钛光之间 · 联合国公园之境」</h2>
+
+    <div class="section">
+        <h2>✦ 中文赏析</h2>
+        <p>坐落于第一大道东河畔，One United Nations Park 是一座极具雕塑感的玻璃建筑，以 简约几何线条+冷峻钛金立面 闪耀于曼哈顿天际线。由世界著名建筑事务所 Richard Meier & Partners 主笔打造，本楼盘是对光影、秩序与永恒建筑语言的致敬。</p>
+        <p>大厦共 43层，融合了 148套住宅与办公空间，其中高层住宅部分设计为全景玻璃外墙，将 东河水面、联合国总部、帝国大厦 等标志景观尽收眼底。每一户型都是“建筑中的建筑”，以建筑师擅长的白色空间与清透玻璃创造出一种漂浮的宁静感。</p>
+        <p>公共设施包括：恒温泳池、健身中心、住户 Sky Lounge、阅读区及沉浸式冥想舱。夜幕降临，整座大楼仿佛一盏流动的城市灯塔，在国际领地中静默守护这片和平之地。</p>
+        <p>📍地址：695 First Avenue, Manhattan, NY<br>
+           🏗️开发商：Solow Building Company<br>
+           🏛️建筑设计：Richard Meier & Partners Architects<br>
+           💎特色亮点：钛金属与玻璃立面、UN第一排视角、极简主义美学、Meier 标志性建筑语言</p>
+    </div>
+
+    <div class="section">
+        <h2>✦ English Version</h2>
+        <p>One United Nations Park is a masterwork of minimalism and light, designed by the legendary Richard Meier & Partners. This sculptural glass tower rises from the edge of Manhattan’s East Side like a monolithic prism, reflecting sky, river, and the pulse of the city.</p>
+        <p>Soaring 43 stories, the tower houses 148 residences and private office spaces, blending modern design with sweeping views of the East River, UN Headquarters, and the Empire State Building. The upper residential floors are wrapped in floor-to-ceiling glass, exuding the studio’s signature purity: white, calm, light-filled, and perfectly proportioned.</p>
+        <p>Amenities include a heated pool, wellness gym, meditation pod, sky lounge, and curated communal spaces for diplomacy and reflection. At night, the building becomes a shimmering lighthouse on the international skyline—an icon of understated power and global serenity.</p>
+        <p>📍Address: 695 First Avenue, Manhattan, NY<br>
+           🏗️Developer: Solow Building Company<br>
+           🏛️Architecture: Richard Meier & Partners Architects<br>
+           💎Highlights: Titanium and glass façade, first-row views of the UN, signature minimalist aesthetic, white serenity in glass form</p>
+    </div>
+    
+
+
+<div id="footer"></div>
+<script>
+  fetch("/components/footer.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("footer").innerHTML = html;
+    });
+</script>
+
+</body>
+</html>

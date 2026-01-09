@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<link rel="stylesheet" href="../styles/styles.css">
+  <meta charset="UTF-8">
+  <title>Trump Tower | 巅峰奢华第五大道地标公寓</title>
+  <style>
+    body {
+      font-family: "Helvetica Neue", sans-serif;
+      margin: 0;
+      padding: 40px;
+      background-color: #fcfcfc;
+      color: #222;
+    }
+    .section {
+      background: #fff;
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    }
+    h1, h2 {
+      color: #111;
+    }
+    ul {
+      line-height: 1.8;
+    }
+    footer {
+      text-align: center;
+      font-size: 13px;
+      color: #999;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🏛 Trump Tower｜川普大厦</h1>
+  <h2>721 Fifth Avenue · Midtown Manhattan · 黄金地段地标建筑</h2>
+
+  <div class="section">
+    <h3>📍 项目概况 / About the Building</h3>
+    <p>
+      Trump Tower 坐落于第五大道核心地段，由 Donald Trump 于1983年开发，是纽约最具代表性的奢华公寓与商业综合大楼之一。整栋建筑拥有耀眼的金色玻璃幕墙，楼高58层，共有231个高端住宅单位，分布在第30至68层，享有独立出入口。
+    </p >
+    <p>
+      Developed by Donald Trump and designed with bold, iconic bronze-glass architecture, Trump Tower is a 58-story Midtown icon housing luxury residences, world-class retail, and exclusive lifestyle offerings in the heart of Fifth Avenue.
+    </p >
+  </div>
+
+  <div class="section">
+    <h3>💰 当前在售单元 / Units for Sale</h3>
+    <ul>
+      <li>• 1 Bedroom: $1.595M – $2.4M（多套）</li>
+      <li>• 2 Bedroom: $2.295M – $2.995M</li>
+      <li>• 3+ Bedroom: $9.495M – $9.7M</li>
+      <li>• 租赁单位：$9,500 – $14,000/月</li>
+    </ul>
+    <p>共计 15 套在售 / 出租单位，最新更新时间：2025年10月。</p >
+  </div>
+
+  <div class="section">
+    <h3>✨ 公共配套 / Amenities</h3>
+    <ul>
+      <li>• 24小时门卫、礼宾服务、代客泊车</li>
+      <li>• 健身房、Trump Bar、Trump Grille 餐厅</li>
+      <li>• 商场与奢侈品牌零售（如 Gucci）</li>
+      <li>• 私人入口、电梯直达、公寓楼层安全隔离</li>
+      <li>• 多语种服务人员、高规格安保团队</li>
+    </ul>
+  </div>
+
+
+
+
+<div id="footer"></div>
+<script>
+  fetch("/components/footer.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("footer").innerHTML = html;
+    });
+</script>
+
+</body>
+</html>

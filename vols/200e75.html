@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<link rel="stylesheet" href="../styles/styles.css">
+  <meta charset="UTF-8" />
+  <title>200 East 75th｜上东区新古典奢华公寓</title>
+  <style>
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      margin: 0;
+      padding: 2rem;
+      background-color: #fdfdfd;
+      color: #333;
+    }
+
+    .property-header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .property-header h1 {
+      font-size: 2rem;
+      color: #111;
+    }
+
+    .property-header p {
+      font-size: 1rem;
+      color: #666;
+    }
+
+ 
+
+      .section {
+      background: #fff;
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    .back-link {
+      display: block;
+      text-align: center;
+      margin-top: 2rem;
+      color: #4a4a4a;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="property-header">
+    <h1>🏙 200 East 75th Street</h1>
+    <p>经典上东区风格的奢华公寓 · Lenox Hill · Immediate Occupancy</p >
+ 
+  </div>
+
+  <div class="section">
+    <h2>📍 项目简介 / About</h2>
+    <p>
+      由著名开发商 Naftali Group 打造，200 East 75th 是一栋致敬上东区传统美学的精品公寓，
+      外立面选用印第安纳石灰石、花岗岩与陶土精工打造。由 Elizabeth Graziolo（Elle Décor/AD 100 建筑师）设计室内，结合新古典精致细节与现代居住体验。
+    </p >
+  </div>
+
+  <div class="section">
+    <h2>💎 户型与价格 / Units & Pricing</h2>
+    <ul>
+      <li>2房：$3,275,000 – $3,400,000</li>
+      <li>3房：$6,330,000</li>
+      <li>4房以上：$6,995,000 – $22,950,000</li>
+    </ul>
+    <p><strong>总共：</strong>35户 · 18层 · 预计2025年完工 · 现房交付中</p >
+  </div>
+
+  <div class="section">
+    <h2>🌿 配套设施 / Amenities</h2>
+    <ul>
+      <li>24小时门卫与礼宾服务</li>
+      <li>私密入口车道（porte-cochère）与自动停车系统</li>
+      <li>屋顶厨房、火炉、Bocce 球场、正式花园</li>
+      <li>瑜伽/训练房、SPA（蒸汽房+桑拿）、健身房</li>
+      <li>室内 Pickleball 球场、保龄球道、影院、儿童活动室</li>
+      <li>定制娱乐空间（带酒吧、台球桌、会客厅、餐厅）</li>
+    </ul>
+  </div>
+
+  <a class="back-link" href="/index.html">← 返回首页</a >
+
+
+
+
+<div id="footer"></div>
+<script>
+  fetch("/components/footer.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("footer").innerHTML = html;
+    });
+</script>
+
+</body>
+</html>

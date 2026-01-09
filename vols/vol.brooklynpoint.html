@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<link rel="stylesheet" href="../styles/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Brooklyn Point｜布鲁克林之巅 | Domova</title>
+  <meta name="description" content="Brooklyn Point | 布鲁克林市中心最高住宅之一，配备屋顶无边泳池与超豪华配套，由 Extell 开发。">
+  <meta name="keywords" content="Brooklyn Point, Downtown Brooklyn, Extell, Luxury Condos, NYC Penthouse, Domova">
+  <style>
+    body {
+      font-family: "Helvetica Neue", sans-serif;
+      margin: 0;
+      padding: 2rem;
+      background-color: #fefefe;
+      color: #222;
+      line-height: 1.6;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    h1 {
+      font-size: 2.4rem;
+      color: #1a1a1a;
+    }
+    h2 {
+      color: #777;
+      font-weight: 400;
+      margin-top: -0.5rem;
+    }
+    section {
+      max-width: 800px;
+      margin: auto;
+      margin-bottom: 2.5rem;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.85rem;
+      color: #888;
+      border-top: 1px solid #ddd;
+      padding-top: 1rem;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>🏙️ Brooklyn Point | 布鲁克林之巅</h1>
+    <h2>Where Luxury Touches the Sky</h2>
+  </header>
+
+  <section>
+    <h3>📍 地址 / Location</h3>
+    <p>1 City Point, Downtown Brooklyn, NY 11201</p >
+    <p>位于 City Point 综合开发区中心，步行可至 Alamo Drafthouse、Dekalb Market Hall、Target、Trader Joe’s。</p >
+  </section>
+
+  <section>
+    <h3>🏗️ 项目简介 / Overview</h3>
+    <p>
+      Brooklyn Point 是由知名开发商 <strong>Extell</strong> 打造的 68 层地标性住宅楼，由 Kohn Pedersen Fox 建筑事务所设计，室内则由 Katherine Newman 操刀。
+      大楼是布鲁克林最高的住宅之一，同时拥有纽约市最高的住宅屋顶无边泳池。
+    </p >
+  </section>
+
+  <section>
+    <h3>💰 价格范围 / Pricing</h3>
+    <ul>
+      <li>Studio: $950,000 –   $985,000</li>
+      <li>1 Bedroom: $1.3M – $1.65M</li>
+      <li>2 Bedrooms: $1.895M – $2.6M</li>
+      <li>3 Bedrooms : $2.995M – $3.495M</li>
+    </ul>
+  </section>
+
+  <section>
+    <h3>🌟 建筑亮点 / Highlights</h3>
+    <ul>
+      <li>纽约最高住宅屋顶无边泳池（65楼）</li>
+      <li>全玻璃外立面 + 超高挑高观景窗</li>
+      <li>40,000 平方英尺配套：健身房、桑拿、水疗、儿童游乐区、私人餐厅、瑜伽室</li>
+      <li>15年421a地税减免，节省高额持有成本</li>
+    </ul>
+  </section>
+
+  <section>
+    <h3>🏞️ 社区环境 / Neighborhood</h3>
+    <p>
+      Brooklyn Point 坐落于布鲁克林市中心黄金区位，周边汇聚 Dekalb Market Hall、Trader Joe’s、Whole Foods、Apple Store 等配套。多条地铁线（A/C/F/R/Q/B/2/3）直达曼哈顿。
+    </p >
+  </section>
+
+  <section>
+    <h3>💫 品牌愿景 / Vision</h3>
+    <blockquote><strong>“Live Above Expectations.”</strong></blockquote>
+    <blockquote>纽约屋顶上的绿洲——Brooklyn Point 带你看见布鲁克林的未来。</blockquote>
+  </section>
+
+
+
+
+<div id="footer"></div>
+<script>
+  fetch("/components/footer.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("footer").innerHTML = html;
+    });
+</script>
+
+</body>
+</html>

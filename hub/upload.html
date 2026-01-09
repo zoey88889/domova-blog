@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Upload Project | Domova</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <style>
+    body { font-family: sans-serif; padding: 2rem; background: #fdfdfd; }
+    form { max-width: 600px; margin: auto; background: #fff; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+    label { display: block; margin: 1rem 0 0.5rem; }
+    input, textarea { width: 100%; padding: 0.8rem; border: 1px solid #ccc; border-radius: 8px; }
+    button { margin-top: 1rem; background: #6a5acd; color: white; border: none; padding: 10px 20px; border-radius: 8px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <h2 style="text-align:center;">📤 Upload Listing / Project</h2>
+  <form>
+    <label>Developer or Agent Name:</label>
+    <input type="text" placeholder="John / DevCo" required>
+
+    <label>Building Name:</label>
+    <input type="text" placeholder="e.g. Skyline Tower" required>
+
+    <label>Location:</label>
+    <input type="text" placeholder="Manhattan / Brooklyn" required>
+
+    <label>Price Range:</label>
+    <input type="text" placeholder="$800,000 – $6,000,000">
+
+    <label>Description:</label>
+    <textarea placeholder="Describe the project..."></textarea>
+
+    <label>Upload Images (optional):</label>
+    <input type="file" multiple>
+
+    <button type="submit">📩 Submit</button>
+  </form>
+</body>
+</html>

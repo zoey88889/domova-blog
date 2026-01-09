@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Southampton | Domova</title>
+  <style>
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #fdfdfd;
+      margin: 0;
+      padding: 0;
+      color: #1a1a1a;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    section {
+      padding: 1rem 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    a.back-link {
+      display: block;
+      text-align: center;
+      padding: 2rem;
+      color: #0074D9;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+
+  <h1>🌊 Southampton</h1>
+  <section>
+    <p><strong>English Overview:</strong><br>
+    Southampton, located in the Hamptons, is synonymous with luxurious beach living. It boasts pristine beaches, historic mansions, high-end boutiques, and a vibrant summer social scene. Just a few hours from NYC, it offers a peaceful escape for city dwellers. The area blends natural beauty with cultural richness, making it a timeless choice for second homes and retreats.</p >
+  </section>
+
+  <h2>🌊 南安普敦（Southampton）社区介绍</h2>
+  <section>
+    <p><strong>中文介绍：</strong><br>
+    南安普敦是汉普顿地区最具代表性的高端度假地之一，以海滨别墅、沙滩、艺术馆、名人庄园和精致生活方式闻名。每年夏季，这里吸引了无数纽约上层人士前来避暑。无论是投资度假屋、享受慢生活，或是打造第二居所，这里都是梦幻般的选择。</p >
+  </section>
+
+  <a href="index.html" class="back-link">← Back to Neighborhoods</a >
+
+<div id="footer"></div>
+<script>
+  fetch("/components/footer.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("footer").innerHTML = html;
+    });
+</script>
+
+</body>
+
+</html>

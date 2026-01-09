@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<link rel="stylesheet" href="../styles/styles.css">
+  <meta charset="UTF-8">
+  <title>Radiant | LIC奢华艺术公寓｜Luxury Condos in Long Island City</title>
+  <style>
+    body {
+      font-family: "Helvetica Neue", sans-serif;
+      background: #f9f9f9;
+      color: #222;
+      padding: 40px;
+      line-height: 1.8;
+    }
+    .section {
+      background: #fff;
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+    h1, h2, h3 {
+      color: #1a1a1a;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    footer {
+      text-align: center;
+      color: #999;
+      font-size: 13px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🏙 Radiant</h1>
+  <h2>24-01 Queens Plaza North, Long Island City · Queens NY</h2>
+
+  <div class="section">
+    <h3>📍 项目简介 / About the Building</h3>
+    <p>
+      Radiant 是 Long Island City 新落成的地标级奢华公寓，由 ODA 和 Paris Forino 设计。大楼拥有19层，共117套住宅，采用弯曲外立面与露台错落交错的建筑语言，是LIC最具辨识度的新建筑之一。
+    </p >
+    <p>
+      Designed by ODA and Paris Forino, Radiant rises 19 stories and features a sculptural, curving façade with tiered balconies and elegant glass details. A true architectural jewel in the heart of LIC.
+    </p >
+  </div>
+
+  <div class="section">
+    <h3>💰 在售/出租单位 / Units for Sale</h3>
+    <ul>
+      <li>• Studio: $610,000 – $790,000（20套）</li>
+      <li>• 1 Bedroom: $870,000 – $1.35M（60套）</li>
+      <li>• 2 Bedroom: $1.48M – $2.06M（21套）</li>
+      <li>• 3 Bedroom: $2.55M（2套）</li>
+    </ul>
+    <p>📅 数据更新时间：2025年11月15日</p >
+  </div>
+
+  <div class="section">
+    <h3>🌟 配套设施 / Amenities</h3>
+    <ul>
+      <li>• 芬兰桑拿 / Finnish Sauna</li>
+      <li>• 室内篮球场、攀岩墙 / Indoor Basketball + Climbing Wall</li>
+      <li>• 健身中心 / Fitness Gym</li>
+      <li>• 儿童活动室、游戏室 / Kids & Game Rooms</li>
+      <li>• 屋顶俱乐部、共厨工作区 / Rooftop Club & Co-Working Lounge</li>
+      <li>• 烧烤台、露台、乒乓中庭 / Rooftop BBQ, Ping Pong Courtyard</li>
+      <li>• 卡拉OK房、自行车间、宠物洗护区 / Karaoke, Bike & Pet Spa</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h3>🏠 户型亮点 / Interior Highlights</h3>
+    <ul>
+      <li>• 全景落地窗 / Floor-to-ceiling windows</li>
+      <li>• 开放式厨房与Bosch电器 / Open kitchens + Bosch appliances</li>
+      <li>• 白橡木橱柜 + 大理石台面 / Custom oak cabinets & marble tops</li>
+      <li>• 全户配备洗衣机干衣机 / In-unit washer & dryer</li>
+      <li>• 部分单位设有露台或阳台 / Many with private outdoor space</li>
+    </ul>
+  </div>
+
+
+
+
+<div id="footer"></div>
+<script>
+  fetch("/components/footer.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("footer").innerHTML = html;
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>NYC Penthouse Market Trends</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      max-width: 700px;
+      margin: auto;
+      padding: 2rem;
+      background: #fefefe;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 1rem;
+    }
+
+    a {
+      color: #0074D9;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>📈 NYC Penthouse Market Trends in 2025</h1>
+  <p>The penthouse market in New York City continues to evolve in 2025 as global buyers seek unique living experiences atop the skyline...</p >
+
+  <p>Key trends include:</p >
+  <ul>
+    <li>Ultra-private elevator access becoming standard</li>
+    <li>Tax incentive zones driving more interest in Brooklyn waterfront towers</li>
+    <li>Chinese and Middle Eastern buyers returning post-visa reforms</li>
+  </ul>
+
+  <p>To explore more penthouses, visit our <a href="/guides/penthouse-definition.html">Penthouse Guide</a >.</p >
+
+  <p><a href="/news/news.html">← Back to Newsroom</a ></p >
+
+
+
+<div id="footer"></div>
+<script>
+  fetch("/components/footer.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("footer").innerHTML = html;
+    });
+</script>
+
+</body>
+</html>

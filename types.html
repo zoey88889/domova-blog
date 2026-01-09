@@ -1,0 +1,182 @@
+<!-- property-types.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Luxury Property Types | Domova</title>
+  <section style="padding: 2rem; max-width: 1000px; margin: auto;">
+  <h2 style="text-align: center;">🏢 当前在售单元｜13大楼盘价格区间</h2>
+  <table style="width: 100%; border-collapse: collapse; margin-top: 1.5rem;">
+    <thead style="background-color: #f0f0f0;">
+      <tr>
+        <th style="padding: 1rem; text-align: left;">楼盘名称</th>
+        <th style="padding: 1rem; text-align: left;">地址 / 区域</th>
+        <th style="padding: 1rem; text-align: left;">在售价格区间</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Central Park Tower</td>
+        <td>Midtown Manhattan</td>
+        <td>$6.5M – $250M</td>
+      </tr>
+      <tr>
+        <td>130 William</td>
+        <td>Financial District</td>
+        <td>$950K – $8M</td>
+      </tr>
+      <tr>
+        <td>Sutton Tower</td>
+        <td>Midtown East</td>
+        <td>$1.82M – $68M</td>
+      </tr>
+      <tr>
+        <td>53W53</td>
+        <td>Midtown Manhattan</td>
+        <td>$3M – $65M</td>
+      </tr>
+      <tr>
+        <td>One High Line</td>
+        <td>Hudson Yards</td>
+        <td>$2M – $50M</td>
+      </tr>
+      <tr>
+        <td>One United Nations Park</td>
+        <td>Midtown East</td>
+        <td>$1.3M – $12M</td>
+      </tr>
+      <tr>
+        <td>520 Fifth Avenue</td>
+        <td>Midtown</td>
+        <td>$1.8M – $45M</td>
+      </tr>
+      <tr>
+        <td>One Manhattan Square</td>
+        <td>Lower East Side</td>
+        <td>$1M – $4M</td>
+      </tr>
+      <tr>
+        <td>The Marina at Astoria</td>
+        <td>Queens</td>
+        <td>$650K – $2M</td>
+      </tr>
+      <tr>
+        <td>111 West 57th Street</td>
+        <td>Billionaire's Row</td>
+        <td>$8M – $110M</td>
+      </tr>
+      <tr>
+        <td>Plaza Residence</td>
+        <td>Central Park South</td>
+        <td>$4M – $60M</td>
+      </tr>
+      <tr>
+        <td>35 Hudson Yards</td>
+        <td>Hudson Yards</td>
+        <td>$5M – $30M</td>
+      </tr>
+      <tr>
+        <td>15 Hudson Yards</td>
+        <td>Hudson Yards</td>
+        <td>$2M – $18M</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+  <style>
+    body { font-family: 'Helvetica Neue', sans-serif; padding: 2rem; background: #fff; }
+    h1 { text-align: center; margin-bottom: 2rem; }
+    .grid { display: flex; flex-wrap: wrap; gap: 1.5rem; justify-content: center; max-width: 1000px; margin: auto; }
+    .type-box {
+      background: #f8f8f8;
+      border-radius: 10px;
+      padding: 2rem;
+      width: 250px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    .type-box h3 { margin-top: 0.5rem; color: #333; }
+    .type-box p { color: #666; font-size: 14px; }
+  </style>
+</head>
+<body>
+<h1>🏠 Property Types</h1>
+<div class="grid">
+
+  <div class="type-box">
+    <h3>Condominiums</h3>
+    <p>Most popular for international buyers—flexible ownership, high resale value.</p >
+  </div>
+
+  <div class="type-box">
+    <h3>Co-ops</h3>
+    <p>Classic NYC ownership with board approval. Lower price per sqft.</p >
+  </div>
+
+  <div class="type-box">
+    <h3>Penthouses</h3>
+    <p>Top-floor sky homes with terraces, views, and pure prestige.</p >
+  </div>
+
+  <div class="type-box">
+    <h3>Townhouses</h3>
+    <p>Private multi-story homes with garden/backyard. No monthly fees.</p >
+  </div>
+
+  <div class="type-box">
+    <h3>Sky Villas</h3>
+    <p>Ultra-luxury duplexes in towers with private pools and skyline views.</p >
+  </div>
+
+  <div class="type-box">
+    <h3>Mansions</h3>
+    <p>Standalone luxury homes—rare in Manhattan, often historic or estate-style.</p >
+  </div>
+
+  <div class="type-box">
+    <h3>Warehouse Lofts</h3>
+    <p>Spacious, industrial-chic residences in converted buildings (SoHo, Tribeca).</p >
+  </div>
+
+  <div class="type-box">
+    <h3>Designer Homes</h3>
+    <p>Curated by top architects—David Adjaye, Jean Nouvel, Frank Gehry.</p >
+  </div>
+
+  <div class="type-box">
+    <h3>Waterfront Residences</h3>
+    <p>Facing East River or Hudson—light-filled, peaceful, and investment-worthy.</p >
+  </div>
+
+  <div class="type-box">
+    <h3>Hotel Residences</h3>
+    <p>Live in 5-star service buildings like Beekman or Baccarat. Ideal pied-à-terre.</p >
+  </div>
+
+  <div class="type-box">
+    <h3>Investment Units</h3>
+    <p>High rental demand, easy management, and value appreciation potential.</p >
+  </div>
+
+<div id="footer"></div>
+<script>
+  fetch("/components/footer.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("footer").innerHTML = html;
+    });
+</script>
+
+</body>
+
+
+
+  <footer>
+
+  <p>&copy; 2025 Domova Media</p >
+    </div>
+ <div class="disclaimer">
+  📌免责声明 / Disclaimer：<br><p><a href="/disclaimer.html">Disclaimer</a ></p >
+</body>
+
+</html>

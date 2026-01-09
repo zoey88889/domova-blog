@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>🌎 Build Your DreamTown | Domova</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/styles.css" />
+  <style>
+    body { font-family: 'Helvetica Neue', sans-serif; background: #fdfcff; text-align: center; padding: 2rem; color: #222; }
+    h1 { font-size: 2rem; color: #6a5acd; }
+    .vote-option { margin: 1rem auto; padding: 1rem; max-width: 480px; background: #fff; border: 1px solid #ddd; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); cursor: pointer; }
+    .vote-option:hover { background-color: #f0f8ff; border-color: #9370db; }
+    .result, .affirmation { margin-top: 2rem; font-size: 0.9rem; color: #555; }
+  </style>
+</head>
+<body>
+
+  <h1>🌟 DreamTown 宇宙投票</h1>
+  <p>🪐 你希望 Dodva Universe 有什么场景？</p >
+
+  <div class="vote-option" onclick="vote('castle')">🏰 空中城堡 x 爱人之家</div>
+  <div class="vote-option" onclick="vote('cafe')">🌊 海边咖啡馆 x 创意空间</div>
+  <div class="vote-option" onclick="vote('market')">🛸 宇宙市集 x AI助手 x AR地图</div>
+  <div class="vote-option" onclick="vote('studio')">🎨 艺术展厅 x Manifest Studio</div>
+  <div class="vote-option" onclick="vote('forest')">🎧 音乐森林 x 冥想泡泡室</div>
+
+  <div class="result">
+    🏰 Castle: <span id="castle">42</span> · 🌊 Cafe: <span id="cafe">36</span> · 🛸 Market: <span id="market">48</span><br>
+    🎨 Studio: <span id="studio">40</span> · 🎧 Forest: <span id="forest">33</span>
+  </div>
+
+  <div class="affirmation" id="affirmation" style="display:none;">
+    💌 你的宇宙愿望已收到！Dodva 已标记 ✨
+  </div>
+
+<script>
+function vote(type) {
+  const el = document.getElementById(type);
+  el.innerText = parseInt(el.innerText) + 1;
+  document.getElementById("affirmation").style.display = "block";
+}
+</script>
+
+</body>
+</html>

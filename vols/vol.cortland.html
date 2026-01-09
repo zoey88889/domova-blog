@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<link rel="stylesheet" href="../styles/styles.css">
+    <meta charset="UTF-8">
+    <title>The Cortland | 纽约豪华公寓</title>
+      <style>
+    body {
+      font-family: "Helvetica Neue", sans-serif;
+      padding: 2rem;
+      background-color: #ffffff;
+      color: #222;
+      line-height: 1.6;
+    }
+    h1, h2 {
+      color: #2e2e2e;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      font-size: 14px;
+      color: #999;
+    }
+    .disclaimer {
+      font-size: 13px;
+      color: #888;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+    <h1>The Cortland｜科特兰大楼</h1>
+    <p><strong>地址：</strong>555 West 22nd Street, New York, NY 10011</p>
+
+    <h2>项目介绍</h2>
+    <p>
+        The Cortland 位于切尔西西区，是由 Robert A.M. Stern Architects 设计的经典之作，融合了传统工艺与现代建筑美学。其外立面采用优雅的红砖和石材，内部设计则精致优雅，营造出温馨又尊贵的居住体验。
+    </p>
+
+    <h2>建筑特色</h2>
+    <ul>
+        <li>奢华设施：包括游泳池、水疗中心、健身房、儿童娱乐室及宠物专属空间</li>
+        <li>挑高大堂，定制雕花木饰与艺术装置</li>
+        <li>部分户型配备露台，坐拥哈德逊河景</li>
+    </ul>
+
+    <h2>周边配套</h2>
+    <p>
+        距离High Line高线公园仅几步之遥，邻近Hudson River Park与Chelsea艺术画廊区，艺术氛围浓厚，生活便利。
+    </p>
+
+    <h2>英文版 / English Version</h2>
+    <h1>The Cortland</h1>
+    <p><strong>Address:</strong> 555 West 22nd Street, New York, NY 10011</p>
+
+    <h2>Introduction</h2>
+    <p>
+        The Cortland, located in West Chelsea, is a masterwork designed by Robert A.M. Stern Architects. The façade features a combination of hand-laid brick and limestone, with interiors that evoke refined craftsmanship and serene luxury.
+    </p>
+
+    <h2>Features</h2>
+    <ul>
+        <li>Luxurious amenities including pool, spa, gym, kids’ playroom, and pet care space</li>
+        <li>Grand lobby with artisan woodwork and bespoke artwork</li>
+        <li>Some units offer private terraces with Hudson River views</li>
+    </ul>
+
+    <h2>Neighborhood</h2>
+    <p>
+        Steps away from the High Line, Hudson River Park, and renowned Chelsea galleries — the perfect blend of tranquility and creativity.
+    </p>
+  
+
+
+<div id="footer"></div>
+<script>
+  fetch("/components/footer.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("footer").innerHTML = html;
+    });
+</script>
+
+</body>
+</html>

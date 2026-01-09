@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Old Westbury| Domova</title>
+  <style>
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #fdfdfd;
+      margin: 0;
+      padding: 0;
+      color: #1a1a1a;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    section {
+      padding: 1rem 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    a.back-link {
+      display: block;
+      text-align: center;
+      padding: 2rem;
+      color: #0074D9;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+<section class="neighborhood-intro">
+  <h1>🏡 Old Westbury</h1>
+  <p><strong>CN｜占地广阔的庄园式富人区，纽约的“庄园之乡”</strong><br>
+  Old Westbury 拥有大片绿地和典雅庄园，邻近马术俱乐部和高尔夫球场，是追求隐私与奢华生活方式买家的理想选择。</p >
+  <p><strong>EN｜Gated estates and expansive privacy just 30 miles from NYC</strong><br>
+  Old Westbury features sprawling estates, manicured gardens, and proximity to country clubs and equestrian facilities. A timeless haven for those who seek space, serenity, and understated prestige.</p >
+</section>
+
+<div id="footer"></div>
+<script>
+  fetch("/components/footer.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("footer").innerHTML = html;
+    });
+</script>
+
+</body>
+
+</html>

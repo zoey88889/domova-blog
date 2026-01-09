@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="stylesheet" href="../styles/styles.css">
+  <meta charset="UTF-8">
+  <title>Skyline Tower | 皇后区天际线奢华地标</title>
+  <style>
+    body {
+      font-family: "Helvetica Neue", sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 40px;
+      color: #222;
+    }
+    .section {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    }
+    h1, h2 {
+      color: #111;
+    }
+    ul {
+      line-height: 1.8;
+    }
+    footer {
+      text-align: center;
+      font-size: 13px;
+      color: #999;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🏙 Skyline Tower | 天际线塔</h1>
+  <h2>3 Court Square · Long Island City · Queens 皇后区地标级公寓</h2>
+
+  <div class="section">
+    <h3>📍 项目概况 / About the Building</h3>
+    <p>
+      Skyline Tower 是皇后区最高的住宅楼，总高 67 层，共有 802 套现代公寓，提供从 Studio 到四居室的多种户型。玻璃外立面设计带来极佳的自然光线，全景落地窗可俯瞰整个纽约市天际线，尽享都市繁华与静谧并存的生活方式。
+    </p >
+    <p>
+      As the tallest condominium in Queens, Skyline Tower offers 802 residences and unmatched 360° panoramic views of NYC. Located in the heart of Long Island City, it blends luxury, serenity, and seamless access to Manhattan via 8 subway lines and multiple ferries.
+    </p >
+  </div>
+
+  <div class="section">
+    <h3>💰 在售/出租单位概览 / Sales & Rentals</h3>
+    <ul>
+      <li>• Studio: $768,000 – $830,000 起 / 租金 $3,500+</li>
+      <li>• 1 Bedroom: $1.1M – $1.29M / 租金 $4,500 – $5,000+</li>
+      <li>• 2 Bedrooms: $1.49M – $2.98M / 租金 $6,400 – $7,300+</li>
+      <li>• 3 Bedrooms: $2.9M+ / 租金 $9,500+</li>
+      <li>• 4 Bedrooms & PH: 最高可达 $3.85M+</li>
+    </ul>
+    <p>共计 46 套在售在租单位，数据更新至 2025 年 Q4。</p >
+  </div>
+
+  <div class="section">
+    <h3>✨ 配套设施 / Amenities</h3>
+    <ul>
+      <li>• 恒温泳池 & Spa 水疗中心</li>
+      <li>• 健身房、瑜伽室、蒸汽房、桑拿</li>
+      <li>• 商务中心、会议室、双层会客厅</li>
+      <li>• 儿童活动室、宠物Spa</li>
+      <li>• 包裹存放室、洗衣房、地下车库</li>
+      <li>• 每户配备洗衣干衣机，设有储藏空间</li>
+    </ul>
+  </div>
+
+
+
+
+<div id="footer"></div>
+<script>
+  fetch("/components/footer.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("footer").innerHTML = html;
+    });
+</script>
+
+</body>
+</html>

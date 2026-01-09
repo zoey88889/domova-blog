@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sands Point| Domova</title>
+  <style>
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #fdfdfd;
+      margin: 0;
+      padding: 0;
+      color: #1a1a1a;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    section {
+      padding: 1rem 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    a.back-link {
+      display: block;
+      text-align: center;
+      padding: 2rem;
+      color: #0074D9;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+<section class="neighborhood-intro">
+  <h1>🌊 Sands Point</h1>
+  <p><strong>CN｜面朝海湾的顶级豪宅社区，犹如现实版“了不起的盖茨比”</strong><br>
+  位于长岛最西北角的 Sands Point，以临水豪宅、私密感强和浓厚的历史文化氛围而著称，是纽约顶级富豪们偏爱的滨海居住地。</p >
+  <p><strong>EN｜Seaside mansions with Gatsby charm</strong><br>
+  Sands Point is a secluded coastal community known for its waterfront estates, historic mansions, and timeless elegance. Residents enjoy sweeping views of the Long Island Sound and unmatched exclusivity.</p >
+</section>
+
+<div id="footer"></div>
+<script>
+  fetch("/components/footer.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("footer").innerHTML = html;
+    });
+</script>
+
+</body>
+
+</html>

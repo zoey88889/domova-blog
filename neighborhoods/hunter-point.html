@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <title>🏙️ Hunters Point｜长岛市核心生活区</title>
+  <meta name="description" content="Hunters Point 是 LIC 最成熟的社区，拥有公园、学校、便利交通与高品质住宅。">
+</head>
+<body>
+
+  <header>
+    <h1>🏙️ Hunters Point</h1>
+    <h2>长岛市最宜居的中心区域之一</h2>
+  </header>
+
+  <section>
+    <div class="block">
+      <h3>English Overview</h3>
+      <p>Hunters Point is the residential heart of LIC, filled with peaceful streets, waterfront parks, schools, and modern condos. With Vernon Blvd as its spine and the 7 train nearby, it's a perfect blend of calm and connection.</p >
+    </div>
+
+    <div class="block">
+      <h3>中文赏析</h3>
+      <p>Hunters Point 是长岛市最适合家庭居住的区域，环境优美、生活便利，配套齐全。</p >
+      <ul>
+        <li>🏞️ 著名地标：Gantry Plaza State Park、Hunters Point Library</li>
+        <li>🚇 交通枢纽：7号线 Vernon-Jackson 站，步行即达</li>
+        <li>🏘️ 社区特色：河景住宅、公园环绕、亲子友好</li>
+      </ul>
+    </div>
+  </section>
+
+
+
+<div id="footer"></div>
+<script>
+  fetch("/components/footer.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("footer").innerHTML = html;
+    });
+</script>
+
+</body>
+</html>

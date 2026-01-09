@@ -1,0 +1,71 @@
+<!-- /price/cost-breakdown.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cost Breakdown of Buying NYC Property | Domova</title>
+  <meta name="description" content="Understand every cost involved in buying a home in NYC. From down payment to taxes and legal fees, get a full breakdown.">
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>📊 Cost Breakdown of Buying Property in NYC</h1>
+    <p style="text-align:center; color:#666;">From down payment to taxes and closing fees — here’s what you really pay.</p >
+  </header>
+
+  <main style="max-width: 800px; margin: auto; padding: 2rem 1rem;">
+    <h2>💵 1. Down Payment</h2>
+    <p>Typically 20%–30% of the purchase price. Cash buyers pay 100% upfront.</p >
+
+    <h2>⚖ 2. Attorney Fee</h2>
+    <p>$2,000 – $4,000 depending on complexity.</p >
+
+    <h2>🏦 3. Mortgage Costs</h2>
+    <ul>
+      <li>Bank Application Fee: $500 – $1,000</li>
+      <li>Appraisal: ~$500</li>
+      <li>Mortgage Recording Tax (only for condos): ~1.8% of loan</li>
+    </ul>
+
+    <h2>🏛 4. Title Fees</h2>
+    <p>Title Insurance & Search: ~$2,000 – $4,000</p >
+
+    <h2>🏰 5. Mansion Tax</h2>
+    <p>Applies to properties over $1 million. Starts at 1%, scaling up to 3.9% for $25M+ homes.</p >
+
+    <h2>💼 6. Transfer Taxes</h2>
+    <p>
+      <strong>Buyers:</strong> Usually exempt in resale deals<br>
+      <strong>New Development:</strong> Buyer may need to cover NYC & NY State transfer taxes (~1.825%)
+    </p >
+
+    <h2>🛠 7. Building Fees</h2>
+    <p>Move-in deposits, application fees, board package fee (co-ops), usually ~$1,000–$3,000 total</p >
+
+    <div style="margin-top:2rem;">
+      <a href="/price/price-guide.html" style="text-decoration:none; background:#0074D9; color:#fff; padding:10px 20px; border-radius:8px;">← Back to Price Guide</a >
+    </div>
+  </main>
+
+
+
+  <footer>
+
+  <p>&copy; 2025 Domova Media</p >
+    </div>
+ <div class="disclaimer">
+  📌免责声明 / Disclaimer：<br><p><a href="/disclaimer.html">Disclaimer</a ></p >
+  
+
+<div id="footer"></div>
+<script>
+  fetch("/components/footer.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("footer").innerHTML = html;
+    });
+</script>
+
+</body>
+</html>

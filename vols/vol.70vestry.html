@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<link rel="stylesheet" href="../styles/styles.css">
+    <meta charset="UTF-8">
+    <title>70 Vestry Street | 纽约豪华公寓</title>
+</head>
+<body>
+    <h1>70 Vestry Street｜威士忒街 70号</h1>
+    <p><strong>地址：</strong>70 Vestry Street, New York, NY 10013</p>
+
+    <h2>项目介绍</h2>
+    <p>
+        70 Vestry Street 坐落于曼哈顿下城 Tribeca 区的滨水地段，由知名建筑师 Robert A.M. Stern 设计，整体建筑风格优雅庄重，充满经典魅力。
+    </p>
+
+    <h2>建筑特色</h2>
+    <ul>
+        <li>外立面采用法国石灰石打造，典雅低调</li>
+        <li>三层会所设施包括游泳池、水疗中心、图书室、餐厅休息区与儿童游乐室</li>
+        <li>可享哈德逊河壮丽景观，部分户型带露台</li>
+    </ul>
+
+    <h2>周边配套</h2>
+    <p>
+        位于 Tribeca 北端，步行可至哈德逊河公园、SOHO、地铁站与各大高级餐厅，是名流雅士偏爱的静谧居所。
+    </p>
+
+    <h2>英文版 / English Version</h2>
+    <h1>70 Vestry Street</h1>
+    <p><strong>Address:</strong> 70 Vestry Street, New York, NY 10013</p>
+
+    <h2>Introduction</h2>
+    <p>
+        70 Vestry Street is an iconic waterfront condominium in Tribeca, designed by Robert A.M. Stern. Its classical limestone façade and refined interiors offer timeless elegance in one of Manhattan’s most sought-after neighborhoods.
+    </p>
+
+    <h2>Features</h2>
+    <ul>
+        <li>French limestone façade with understated luxury</li>
+        <li>Club amenities include pool, spa, library, dining suite, and children’s playroom</li>
+        <li>Sweeping views of the Hudson River; many units offer private terraces</li>
+    </ul>
+
+    <h2>Neighborhood</h2>
+    <p>
+        Located at the northern edge of Tribeca, steps from Hudson River Park, world-class dining, shopping, and major subway lines — an ideal mix of tranquility and accessibility.
+    </p>
+  
+
+
+<div id="footer"></div>
+<script>
+  fetch("/components/footer.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("footer").innerHTML = html;
+    });
+</script>
+
+</body>
+</html>

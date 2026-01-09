@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <title>🌆 Williamsburg｜布鲁克林灵魂街区 · 艺术与生活的交汇点</title>
+  <meta name="description" content="Williamsburg, Brooklyn｜布鲁克林最具艺术气息的街区之一，潮流生活、复古建筑与河岸日落交织的独特魅力。">
+  <meta name="keywords" content="Williamsburg, Brooklyn, 布鲁克林, Brooklyn Neighborhood, NY生活, 艺术区">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+  <style>
+    body {
+      font-family: "Helvetica Neue", sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #1a1a1a;
+    }
+    header {
+      background-color: #f5f5f5;
+      padding: 2rem;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+    }
+    h1 {
+      font-size: 2.3rem;
+      margin-bottom: 0.3rem;
+    }
+    h2 {
+      color: #888;
+      font-weight: 400;
+      font-size: 1.1rem;
+    }
+    section {
+      padding: 2rem;
+      max-width: 880px;
+      margin: auto;
+    }
+    .block {
+      margin-bottom: 2rem;
+    }
+    .highlight:hover {
+      background-color: #f0f8ff;
+      transition: 0.3s ease;
+    }
+    #map {
+      height: 300px;
+      width: 100%;
+      margin-top: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    ul {
+      padding-left: 1.2rem;
+      margin-top: 1rem;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.85rem;
+      color: #888;
+      padding: 2rem 1rem;
+      border-top: 1px solid #ddd;
+      margin-top: 3rem;
+    }
+    a {
+      color: #0055cc;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🌆 Williamsburg</h1>
+    <h2>布鲁克林的灵感引擎 · 艺术与自由的碰撞地</h2>
+  </header>
+
+  <section>
+    <div class="block highlight">
+      <h3>English Overview</h3>
+      <p>Williamsburg is the creative pulse of Brooklyn—an eclectic blend of old industrial charm and modern flair. With converted lofts, art galleries, vintage shops, and waterfront views, this neighborhood attracts artists, entrepreneurs, and dreamers alike. L train and East River Ferry make commuting to Manhattan a breeze.</p >
+    </div>
+
+    <div class="block highlight">
+      <h3>中文赏析</h3>
+      <p>威廉斯堡，是布鲁克林最具代表性的艺术街区。复古工厂改造的 Loft、公园绿地与创意咖啡馆构成独特的城市美学，是自由职业者与潮人聚集的灵感场所。</p >
+      <ul>
+        <li>🌆 主要特色：街头涂鸦、独立书店、手作市集、古着店</li>
+        <li>🏞️ 打卡地标：Domino Park、East River Pier、Smorgasburg 美食市集</li>
+        <li>🚇 交通方式：地铁 L 线 / East River Ferry</li>
+        <li>🏢 代表楼盘：The Oosten、Level、Two Trees 等</li>
+      </ul>
+    </div>
+
+    <div id="map"></div>
+  </section>
+
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+  <script>
+    const map = L.map('map').setView([40.7145, -73.9619], 14); // Williamsburg 坐标
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '© OpenStreetMap',
+    }).addTo(map);
+    L.marker([40.7145, -73.9619])
+      .addTo(map)
+      .bindPopup('📍 Williamsburg, Brooklyn')
+      .openPopup();
+  </script>
+
+
+
+<div id="footer"></div>
+<script>
+  fetch("/components/footer.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("footer").innerHTML = html;
+    });
+</script>
+
+</body>
+</html>

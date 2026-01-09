@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="../styles/styles.css">
+  <meta charset="UTF-8">
+  <title>VOL.7｜111 W 57th Street– Steinway Tower</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      background-color: #f6f6f6;
+      color: #333;
+      padding: 40px;
+      line-height: 1.6;
+    }
+    h1 {
+      font-size: 28px;
+      color: #111;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 10px;
+    }
+    h2 {
+      font-size: 20px;
+      margin-top: 30px;
+      color: #555;
+    }
+    .section {
+      margin-bottom: 40px;
+    }
+    .disclaimer {
+      font-size: 12px;
+      color: #888;
+      border-top: 1px solid #ddd;
+      padding-top: 10px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>VOL.7｜111 W 57th Street– Steinway Tower</h1>
+  <p><em>「时间的脊梁 · 音乐与光影的摩天诗」</em></p>
+
+  <div class="section">
+    <h2>✦ 中文赏析</h2>
+    <p>111 West 57th Street，被誉为全球最纤细的摩天大楼，楼体宽高比高达1:24，如同一根垂直划破曼哈顿天际线的音叉，轻盈却坚定地站立在 Billionaire’s Row 最黄金的中心点上。</p>
+    <p>整栋楼由 SHoP Architects 设计，完美融合历史与现代：塔楼本体采用青铜与陶瓷条状外立面，在阳光下仿若琴弦震颤，熠熠生辉；而底座则为历史悠久的 Steinway Hall——一座 1925 年的地标建筑，昔日是全球顶级钢琴品牌 Steinway & Sons 的总部，如今则被华丽复兴为塔楼的奢华接待大厅。</p>
+    <p>共设 46个住宅单位，每户横跨整层，拥有 270度中央公园+天际线全景，室内由 Studio Sofield 打造，细节讲究到门把的雕刻、壁炉的选材、窗帘的卷角——完美诠释何为“垂直宫殿”。</p>
+    <p>设施包含：室内泳池、水疗、瑜伽室、住户酒廊、私人餐厅与定制服务套组，真正为少数而建。</p>
+    <p>📍地址：111 West 57th Street, Manhattan, NY<br>
+    🏗️开发商：JDS Development Group, Property Markets Group<br>
+    🏛️建筑设计：SHoP Architects<br>
+    💎特色亮点：全球最纤细高楼、Steinway Hall 历史融合、中央公园无敌景观、每户独层设计</p>
+  </div>
+
+  <div class="section">
+    <h2>✦ English Version</h2>
+    <p>111 West 57th Street, also known as Steinway Tower, stands as the most slender skyscraper in the world, with a record-breaking slenderness ratio of 1:24. Rising like a celestial tuning fork on Billionaire’s Row, it marries modern innovation with historic elegance.</p>
+    <p>Designed by SHoP Architects, the tower features a facade of terra-cotta and bronze filigree, catching sunlight like vibrating strings on a harp. Its base is the restored Steinway Hall, a 1925 landmark once home to Steinway & Sons, now transformed into a majestic entrance that anchors the tower’s artistic lineage.</p>
+    <p>Only 46 full-floor residences span the building, each boasting 270° panoramic views of Central Park and the Manhattan skyline. Interiors by Studio Sofield exude classical opulence—custom bronze hardware, hand-carved moldings, bespoke fireplaces, and palatial proportions.</p>
+    <p>Amenities include a lap pool, spa, yoga studio, resident lounge, private dining, and tailored concierge services, befitting the tower’s rarefied essence.</p>
+    <p>📍Address: 111 West 57th Street, Manhattan, NY<br>
+    🏗️Developer: JDS Development Group, Property Markets Group<br>
+    🏛️Architecture: SHoP Architects<br>
+    💎Highlights: World’s slimmest skyscraper, restored Steinway Hall, full-floor residences, unobstructed Central Park views</p>
+  </div>
+
+
+
+<div id="footer"></div>
+<script>
+  fetch("/components/footer.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("footer").innerHTML = html;
+    });
+</script>
+
+</body>
+</html>

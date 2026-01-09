@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hell's Kitchen | Domova Neighborhoods</title>
+  <meta name="description" content="Explore luxury condos and lifestyle in Hell's Kitchen, NYC – discover modern living near the Hudson River. 地狱厨房豪华公寓与生活方式导览。">
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header>
+    <h1>🔥 Hell’s Kitchen 地狱厨房</h1>
+    <p>Where grit meets glamour, Hell’s Kitchen has transformed into a lively luxury hub near the Hudson.</p >
+  </header>
+
+  <section>
+    <h2>📍 English Overview</h2>
+    <p>Hell’s Kitchen, once a gritty industrial area, is now a vibrant, rapidly gentrifying neighborhood near Midtown West. Its proximity to the Theater District, Hudson River Park, and a wave of trendy restaurants and luxury developments have made it a hotspot for young professionals, artists, and global investors.</p >
+  </section>
+
+  <section>
+    <h2>📍 中文简介</h2>
+    <p>地狱厨房（Hell’s Kitchen）原为工业老区，如今已华丽变身为集活力、艺术与现代生活于一体的高端社区。紧邻百老汇剧院区与哈德逊河公园，这里汇聚了大量新建高层公寓、精品美食与文化艺术场所，成为纽约年轻专业人士与国际投资客的理想之地。</p >
+  </section>
+
+  <section>
+    <h2>🏙 推荐楼盘 / Featured Condos</h2>
+    <ul>
+      <li><strong>547 West 47th Street</strong> – Boutique luxury condo with rooftop pool & curated amenities.</li>
+      <li><strong>Oskar (572 11th Ave)</strong> – Sleek glass façade, high-end finishes, ideal for investors.</li>
+      <li><strong>Sky (605 W 42nd St)</strong> – One of NYC’s tallest luxury rentals with condo-like amenities.</li>
+      <li><strong>505 W 43</strong> – Dual tower condos with Hudson River views & elegant interiors.</li>
+    </ul>
+  </section>
+
+
+    
+
+
+<div id="footer"></div>
+<script>
+  fetch("/components/footer.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("footer").innerHTML = html;
+    });
+</script>
+
+</body>
+</html>

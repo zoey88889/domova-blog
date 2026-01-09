@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>NoMad Neighborhood | Domova</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <header>
+    <h1>🌿 NoMad（North of Madison Square Park）</h1>
+    <p>Where timeless elegance meets downtown edge</p >
+  </header>
+
+  <section>
+    <h2>📍 社区简介 | Neighborhood Overview</h2>
+    <p>
+      NoMad 是 “North of Madison Square Park” 的缩写，位于纽约曼哈顿中城区南部，以麦迪逊广场公园为核心辐射区域。这里融合了历史与现代，拥有林立的精品酒店、高端餐厅、私密酒吧和设计感极强的住宅楼盘。近年来，NoMad 吸引了大量年轻专业人士、创意人群与国际买家，成为纽约最受欢迎的新兴豪宅社区之一。
+    </p >
+    <p>
+      NoMad stands for "North of Madison Square Park." This neighborhood blends historic architecture with sleek modern developments, trendy restaurants, boutique hotels, and a creative downtown vibe. Once industrial, it’s now a hotspot for luxury living with easy access to Flatiron, Chelsea, and Midtown.
+    </p >
+  </section>
+
+  <section>
+    <h2>🏙 代表性产权楼盘 | Featured Condominiums</h2>
+    <ul>
+      <li><strong>277 Fifth Avenue</strong> — Rafael Viñoly 设计的现代摩天住宅楼，俯瞰麦迪逊公园</li>
+      <li><strong>Rose Hill</strong> — Rockefeller Group 开发，带有艺术装饰风格与创意空间</li>
+      <li><strong>Madison House</strong> — 62 层高空景观住宅，设有顶级会所设施</li>
+      <li><strong>The Ritz-Carlton Residences</strong> — 集酒店与私人公寓为一体的尊贵体验</li>
+      <li><strong>The NOMA</strong> — 较小众但极具设计感的新式住宅楼盘</li>
+    </ul>
+  </section>
+
+  
+
+<div id="footer"></div>
+<script>
+  fetch("/components/footer.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("footer").innerHTML = html;
+    });
+</script>
+
+</body>
+  <!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+  const map = L.map('map').setView([40.7459, -73.9884], 14); // Nomad
+
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; OpenStreetMap contributors'
+  }).addTo(map);
+
+  L.marker([40.7459, -73.9884])
+    .addTo(map)
+    .bindPopup('NoMad')
+    .openPopup();
+</script>
+</body>
+</html>

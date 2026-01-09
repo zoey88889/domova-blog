@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="../styles/styles.css">
+  <meta charset="UTF-8">
+  <title>VOL.3｜Sutton Tower｜430 E 58th St</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      background-color: #f6f6f6;
+      color: #222;
+      margin: 40px;
+      line-height: 1.8;
+    }
+    h1 {
+      font-size: 28px;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 10px;
+    }
+    h2 {
+      font-size: 22px;
+      color: #444;
+      margin-top: 40px;
+    }
+    .section {
+      margin-top: 30px;
+    }
+    .disclaimer {
+      font-size: 14px;
+      color: #666;
+      border-top: 1px dashed #aaa;
+      margin-top: 50px;
+      padding-top: 20px;
+    }
+    .divider {
+      text-align: center;
+      margin: 30px 0;
+      font-size: 20px;
+      letter-spacing: 3px;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+
+<h1>VOL.3｜Sutton Tower｜430 E 58th St</h1>
+<div class="divider">「曼哈顿东城皇冠 · Sutton 区唯一超高层塔楼」</div>
+
+<div class="section">
+  <h2>✦ 中文赏析</h2>
+  <p>在古典与现代交汇之地——曼哈顿东58街，Sutton Tower 如一支垂直竖琴，拔地而起，奏响属于纽约东城的崭新时代。这是 Sutton Place 区域首座、也是唯一一座超高层塔楼，高耸至 850 英尺（约259米），坐拥东河与城市天际线的无敌景观。</p>
+  <p>建筑由 Thomas Juul-Hansen 操刀，外立面呈现温润石材与玻璃立面的黄金比例，刚柔并济，彰显高贵。每一套住宅皆为定制奢华设计，部分单位配有整面转角落地窗、雕塑级厨房与 spa 式浴室，极致工艺一览无遗。</p>
+  <p>塔楼南向俯瞰整个中城天际线，东向直面东河与 Roosevelt Island，部分高楼层更可远眺皇后区夜景与远处的长岛海岸线。配套设施包括健身房、水疗中心、儿童活动区、住户会所及24小时礼宾服务，专为高端居住体验打造。</p>
+  <p>📍地址：430 East 58th Street, New York, NY<br>
+     🏗️开发商：Gamma Real Estate<br>
+     🏛️建筑设计：Thomas Juul-Hansen<br>
+     💎特色亮点：Sutton 区唯一超高层、绝美东河景、定制室内设计、艺术级细节打磨</p>
+</div>
+
+<div class="section">
+  <h2>✦ English Version</h2>
+  <p>Sutton Tower, soaring to 850 feet, redefines luxury living in Manhattan’s serene East Side. It stands as the first and only supertall residential tower in Sutton Place, offering panoramic views of the East River, Midtown skyline, and beyond.</p>
+  <p>Designed by the acclaimed Thomas Juul-Hansen, the façade blends warm-toned stone with sleek glass, combining timeless elegance with modern sophistication. Each residence is crafted with meticulous attention to detail—featuring sculptural kitchens, spa-inspired baths, and expansive corner windows that flood the space with natural light.</p>
+  <p>South-facing homes capture the dazzling Manhattan skyline, while east-facing units overlook the tranquil East River. Amenities include a state-of-the-art fitness center, wellness spa, children’s playroom, resident lounge, and 24-hour concierge—curated for the discerning homeowner.</p>
+  <p>📍Address: 430 East 58th Street, New York, NY<br>
+     🏗️Developer: Gamma Real Estate<br>
+     🏛️Architect: Thomas Juul-Hansen<br>
+     💎Highlights: Sutton’s only supertall, breathtaking river views, custom interiors, refined European craftsmanship</p>
+</div>
+  
+
+
+<div id="footer"></div>
+<script>
+  fetch("/components/footer.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("footer").innerHTML = html;
+    });
+</script>
+
+</body>
+</html>

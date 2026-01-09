@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<link rel="stylesheet" href="../styles/styles.css">
+  <meta charset="UTF-8">
+  <title>The Henry｜上西区奢华新公寓 | Luxury Condos in Upper West Side NYC</title>
+  <style>
+    body {
+      font-family: "Helvetica Neue", sans-serif;
+      background: #fdfdfd;
+      color: #222;
+      padding: 40px;
+      line-height: 1.8;
+    }
+    .section {
+      background: #fff;
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+    h1, h2, h3 {
+      color: #1a1a1a;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    footer {
+      text-align: center;
+      color: #999;
+      font-size: 13px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🏙 The Henry</h1>
+  <h2>211 West 84th Street, Upper West Side, NYC</h2>
+
+  <div class="section">
+    <h3>📍 项目简介 / About the Building</h3>
+    <p>
+      The Henry 是 Naftali Group 打造的全新精品住宅项目，由著名建筑事务所 Robert A.M. Stern 设计，坐落于纽约上西区中心地段，步行可达中央公园与哈德逊河。
+    </p >
+    <p>
+      Developed by Naftali Group and designed by Robert A.M. Stern Architects, The Henry brings classic elegance with limestone façade, bay windows and terraces — a true boutique building with only 45 residences.
+    </p >
+  </div>
+
+  <div class="section">
+    <h3>💰 在售单位 / Units for Sale</h3>
+    <ul>
+      <li>• 1 Bedroom: $2,250,000 – $2,475,000（3套）</li>
+      <li>• 2 Bedroom: $3,600,000 – $3,675,000（2套）</li>
+      <li>• 3 Bedroom: $5,385,000 – $7,150,000（8套）</li>
+      <li>• 4+ Bedroom: $6,550,000 – $28,750,000（24套）</li>
+    </ul>
+    <p>📅 数据更新：2025年10月31日</p >
+  </div>
+
+  <div class="section">
+    <h3>🌟 配套设施 / Amenities</h3>
+    <ul>
+      <li>• 私人花园 & 屋顶露台（户外厨房、火炉、Bocce球场）</li>
+      <li>• 图书馆、壁炉休息室 / Library & Lounge with Fireplace</li>
+      <li>• 曼哈顿首个室内 Pickleball 球场</li>
+      <li>• 半场篮球场、双道保龄球、影院 & 儿童乐园</li>
+      <li>• 健身中心 + 私人瑜伽房 + SPA 桑拿/蒸汽室</li>
+      <li>• Club Room、酒吧、沙龙、宴会厅（含厨房）</li>
+      <li>• 自动泊车系统 + 24小时礼宾与门卫服务</li>
+    </ul>
+  </div>
+
+
+
+
+
+<div id="footer"></div>
+<script>
+  fetch("/components/footer.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("footer").innerHTML = html;
+    });
+</script>
+
+</body>
+</html>

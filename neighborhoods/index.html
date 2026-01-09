@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Explore NYC Neighborhoods | Domova</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      background: #f5f5f5;
+      color: #1a1a1a;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 20px;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #777;
+      font-size: 16px;
+    }
+
+    #map {
+      height: 500px;
+      max-width: 1000px;
+      margin: 40px auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .stars {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 1000px;
+      margin: 2rem auto;
+      gap: 1rem;
+    }
+
+    .nb-link {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      padding: 1rem 1.5rem;
+      border-radius: 12px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      transition: all 0.3s ease;
+    }
+
+    .nb-link:hover {
+      background-color: #f0f8ff;
+      color: #0074D9;
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🌟 NYC Neighborhood Guide</h1>
+    <p>Discover those iconic communities where elegance meets lifestyle.</p >
+  </header>
+
+  <div id="map"></div>
+
+  <section>
+    <h2 style="text-align:center; margin-top: 2rem;">🔭 Explore NYC Neighborhoods</h2>
+    <div class="stars">
+      <a href="/neighborhoods/upper-east.html" class="nb-link">🌸 Upper East Side</a >
+      <a href="/neighborhoods/upper-west.html" class="nb-link">🍃 Upper West Side</a >
+      <a href="/neighborhoods/midtown.html" class="nb-link">🏙 Midtown Manhattan</a >
+      <a href="/neighborhoods/midtown-east.html" class="nb-link">🌆 Midtown East</a >
+      <a href="/neighborhoods/hudson.html" class="nb-link">🌠 Hudson Yards</a >
+      <a href="/neighborhoods/soho.html" class="nb-link">🛍️ SoHo</a >
+      <a href="/neighborhoods/tribeca.html" class="nb-link">🎬 Tribeca</a >
+      <a href="/neighborhoods/greenwich.html" class="nb-link">🍀 Greenwich Village</a >
+      <a href="/neighborhoods/chelsea.html" class="nb-link">🖼️ Chelsea</a >
+      <a href="/neighborhoods/fidi.html" class="nb-link">📈 FiDi</a >
+      <a href="/neighborhoods/batteryparkcity.html" class="nb-link">⛲️ Battery Park City</a >
+      <a href="/neighborhoods/nomad.html" class="nb-link">🌌 NoMad</a >
+      <a href="/neighborhoods/hellskitchen.html" class="nb-link">🍸 Hell's Kitchen</a >
+    </div>
+  </section>
+
+<!-- 🏡 Long Island City Popular Areas -->
+<section>
+  <h2 style="text-align:center; margin: 3rem 0 1.5rem;"> 🗺️  Explore featured area in Long Island City</p >
+</h2>
+  <div class="stars" style="
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    justify-content: center;
+    max-width: 960px;
+    margin: 0 auto;
+  ">
+    <a href="/lic/hunterspoint.html" class="nb-link"> 🏙️Hunters Point</a >
+    <a href="/lic/court-square.html" class="nb-link"> 🏢Court Square</a >
+    <a href="/lic/queens-plaza.html" class="nb-link">🚇Queens Plaza</a >
+    <a href="/lic/riverfront.html" class="nb-link"> 🌊Waterfront / Riverfront</a >
+    <a href="/lic/murray-park.html" class="nb-link"> ⛲️Murray Park</a >
+    <a href="/lic/jackson-avenue.html" class="nb-link"> 🎨Jackson Ave </a >
+    <a href="/lic/crescent-st.html" class="nb-link"> 🌲Crescent Street</a >
+    <a href="/lic/center-blvd.html" class="nb-link"> 🖼️Center Blvd </a >
+  </div>
+</section>
+
+<!-- 🏡 Brooklyn Popular Areas -->
+<section>
+  <h2 style="text-align:center; margin: 3rem 0 1.5rem;">🏡  Brooklyn Popular Areas</h2>
+  <div class="stars" style="
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    justify-content: center;
+    max-width: 960px;
+    margin: 0 auto;
+  ">
+    <a href="/neighborhoods/williamsburg.html" class="nb-link">🎨 Williamsburg</a >
+    <a href="/neighborhoods/brooklynheights.html" class="nb-link">⛲️ Brooklyn Heights </a >
+    <a href="/neighborhoods/dumbo.html" class="nb-link">🛍️ DUMBO</a >
+    <a href="/neighborhoods/prospectheights.html" class="nb-link">🌳 Prospect Heights</a >
+    <a href="/neighborhoods/carrollgardens.html" class="nb-link">✨ Carroll Gardens</a >
+    <a href="/neighborhoods/greenpoint.html" class="nb-link">🌲 Greenpoint</a >
+    <a href="/neighborhoods/parkslope.html" class="nb-link">🌸 Park Slope</a >
+    <a href="/neighborhoods/fortgreene.html" class="nb-link">🏠 Fort Greene</a >
+    <a href="/neighborhoods/bushwick.html" class="nb-link">🖼️ Bushwick</a >
+  </div>
+</section>
+<!-- 🌟 Signatures Communities  /  标志性地区-->
+<section>
+  <h2 style="text-align:center; margin-top: 3rem;">🌟 Signatures Communities  </h2>
+  <div class="stars" style="text-align:center; display:flex; justify-content:center; flex-wrap: wrap; gap: 1rem; margin-top: 1rem;">
+    <a href="/neighborhoods/manhasset.html" class="nb-link">🛍️ Manhasset</a >
+    <a href="/neighborhoods/southampton.html" class="nb-link">🌊 Southampton</a >
+    <a href="/neighborhoods/whitestone.html" class="nb-link">🌉 Whitestone</a >
+  </div>
+</section>
+
+<!-- 🌳 Timeless Neighborhoods  /  历久弥新的街区 -->
+<section>
+  <h2 style="text-align:center; margin-top: 3rem;">🌳 Timeless Neighborhoods  </h2>
+  <div class="stars">
+    <a href="/neighborhoods/greatneck.html" class="nb-link">🌳 Great Neck</a >
+    <a href="/neighborhoods/oldwestbury.html" class="nb-link">🏡 Old Westbury</a >
+    <a href="/neighborhoods/sandspoint.html" class="nb-link">🌊 Sands Point</a >
+    <a href="/neighborhoods/hewlettbaypark.html" class="nb-link">🌅 Hewlett Bay Park</a >
+  </div>
+</section>
+
+<!-- （原五大区板块已删除或注释） -->
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script>
+    const map = L.map('map').setView([40.75, -73.97], 12);
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; OpenStreetMap',
+    }).addTo(map);
+  </script>
+
+
+<div id="footer"></div>
+<script>
+  fetch("/components/footer.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("footer").innerHTML = html;
+    });
+</script>
+
+</body>
+</html>

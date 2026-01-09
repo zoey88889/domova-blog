@@ -1,0 +1,78 @@
+<!-- test.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>🌸 </title>
+</head>
+<body>
+  <h1>💌 欢迎预约或咨询</h1>
+
+<<form name="booking" method="POST" data-netlify="true" action="thank-you.html">
+  <h2>预约看房</h2>
+
+  <label>👤 姓名 / Name</label>
+  <input type="text" name="name" placeholder="请输入您的姓名" required>
+
+  <label>📞 联系电话 / Phone</label>
+  <input type="tel" name="phone" placeholder="请输入手机号码" required>
+
+  <label>📧 电子邮箱 / Email</label>
+  <input type="email" name="email" placeholder="请输入邮箱" required>
+
+  <label>🏠 感兴趣的房源 / Property of Interest</label>
+  <input type="text" name="property" placeholder="如：53W53 Penthouse 或 One High Line APT 25A">
+
+  <label>📅 预约日期 / Preferred Date</label>
+  <input type="date" name="date">
+
+  <label>⏰ 预约时间 / Preferred Time</label>
+  <input type="time" name="time">
+
+
+  <label>📝 其他备注 / Notes</label>
+  <textarea name="message" placeholder="如有其他需求或看房偏好可在此备注"></textarea>
+
+  <!-- ✅ 隐藏字段：记录提交时间和 ISO booking 时间 -->
+  <input type="hidden" name="submitted_at" id="submitted_at">
+  <input type="hidden" name="booking_time_iso" id="booking_time_iso">
+
+  <button type="submit">提交预约 / Submit</button>
+</form>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector("form[name='booking']");
+    const submittedAt = document.getElementById("submitted_at");
+    const bookingISO = document.getElementById("booking_time_iso");
+
+    form.addEventListener("submit", function () {
+      // 当前时间戳
+      const now = new Date().toLocaleString("en-US", { timeZone: "America/New_York" });
+      submittedAt.value = now;
+
+      // 获取用户填写的日期和时间
+      const date = form.querySelector('input[name="date"]').value;
+      const time = form.querySelector('input[name="time"]').value;
+
+      if (date && time) {
+        // 构建 ISO 时间格式，假设纽约时间为 -05:00
+        const isoString = `${date}T${time}:00-05:00`;
+        bookingISO.value = isoString;
+      }
+    });
+  });
+</script>
+  
+
+<div id="footer"></div>
+<script>
+  fetch("/components/footer.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("footer").innerHTML = html;
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<link rel="stylesheet" href="../styles/styles.css">
+  <meta charset="UTF-8">
+  <title>Olympic Tower | 奢华公寓展示</title>
+  <style>
+    body {
+      font-family: "Helvetica Neue", sans-serif;
+      margin: 0;
+      padding: 30px;
+      background-color: #f7f7f7;
+      color: #222;
+    }
+    h1, h2 {
+      color: #000;
+    }
+    .section {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+    }
+    ul {
+      line-height: 1.8;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🏛 Olympic Tower 奥林匹克大厦</h1>
+  <h2>641 Fifth Avenue, Midtown Manhattan</h2>
+
+  <div class="section">
+    <h3>📍 项目介绍 About</h3>
+    <p>
+      Olympic Tower 是纽约市最早的混合用途奢华公寓之一，由 Onassis 开发，著名建筑事务所 SOM 设计。
+      住宅分布于第 22 至 51 层，共 225 套奢华单位。建筑坐落于第五大道与51街交汇处，俯瞰圣帕特里克大教堂与洛克菲勒中心，是纽约高净值人群的热门选择之一。
+    </p >
+    <p>
+      Olympic Tower is considered one of NYC’s top white-glove condo buildings. It offers stunning skyline views, unmatched privacy and service, and a premier location along Fifth Avenue.
+    </p >
+  </div>
+
+  <div class="section">
+    <h3>🛏️ 当前在售单位 Units for Sale</h3>
+    <ul>
+      <li>• 一居室 — $2,325,000｜1 Bed / 1.5 Baths</li>
+      <li>• 两居室 — $2.75M–$2.85M｜2 Beds / 2.5 Baths</li>
+      <li>• 两居室 — $3.75M｜2 Beds / 3.5 Baths</li>
+      <li>• 顶级10居室 — $34,000,000｜10 Beds / 11 Baths</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h3>💎 公共配套 Amenities</h3>
+    <ul>
+      <li>• 24 小时礼宾、门卫与安保</li>
+      <li>• 电梯引导员，支持多语言服务</li>
+      <li>• 健身中心 / Gym on-site</li>
+      <li>• Abigail Michael’s 专属礼宾服务</li>
+      <li>• 允许公司购房与投资用途</li>
+      <li>• 不允许养宠物 / No Pets Policy</li>
+    </ul>
+  </div>
+
+
+
+
+
+<div id="footer"></div>
+<script>
+  fetch("/components/footer.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("footer").innerHTML = html;
+    });
+</script>
+
+</body>
+</html>

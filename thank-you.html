@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Thank You — Domova Real Estate</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background: linear-gradient(135deg, #0b0f1a, #1c2d3a);
+      font-family: 'Helvetica Neue', sans-serif;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      font-size: 2.8em;
+      background: linear-gradient(to right, #00f0ff, #ff00cc);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.25em;
+      max-width: 600px;
+      line-height: 1.8;
+      margin-bottom: 40px;
+    }
+
+    .btn {
+      padding: 12px 28px;
+      background: #00c9b7;
+      border: none;
+      border-radius: 30px;
+      font-size: 1em;
+      color: #fff;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #01e0ca;
+      transform: scale(1.05);
+    }
+
+    .footer {
+      font-size: 0.9em;
+      margin-top: 40px;
+      opacity: 0.6;
+    }
+  </style>
+</head>
+<body>
+  <h1>🏙️ Thank You / 感谢预约！</h1>
+  <p>
+    Your property viewing request has been received by <strong>Domova Real Estate</strong> 🏡 <br>
+    我们已经收到您的 <strong>看房预约</strong>！我们的专业顾问将尽快与您联系 ✨<br><br>
+    Stay tuned — we’ll help you find the perfect NYC property. <br>
+    请留意邮箱与电话通知 💌
+  </p >
+
+  <a class="btn" href="index.html">← Back to Home / 返回首页</a >
+
+ 
+
+<div id="footer"></div>
+<script>
+  fetch("/components/footer.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("footer").innerHTML = html;
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Manhasset | Domova</title>
+  <style>
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #fdfdfd;
+      margin: 0;
+      padding: 0;
+      color: #1a1a1a;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    section {
+      padding: 1rem 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    a.back-link {
+      display: block;
+      text-align: center;
+      padding: 2rem;
+      color: #0074D9;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🌸 Manhasset</h1>
+  <section>
+    <p><strong>English Overview:</strong><br>
+    Nestled in Long Island’s Gold Coast, Manhasset is a serene yet upscale suburb known for its elite schools, spacious homes, and proximity to Manhattan. Residents enjoy the convenience of the LIRR train, luxury shopping at Americana Manhasset, and scenic parks with waterfront views. It’s a favorite for families seeking top-tier education and a refined suburban lifestyle.</p >
+  </section>
+
+  <h2>🌸 曼哈塞特（Manhasset）社区介绍</h2>
+  <section>
+    <p><strong>中文介绍：</strong><br>
+    曼哈塞特坐落于长岛黄金海岸，是纽约上东区家长们钟爱的近郊居住区之一。这里拥有顶尖的公立学区、安静宽敞的街道、高端商圈 Americana Manhasset，以及可直达曼哈顿的火车线，是集优雅、便利、教育于一体的理想社区。许多华人家庭也选择在此安家。</p >
+  </section>
+
+  <a href="index.html" class="back-link">← Back to Neighborhoods</a >
+
+<div id="footer"></div>
+<script>
+  fetch("/components/footer.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("footer").innerHTML = html;
+    });
+</script>
+
+</body>
+
+</html>

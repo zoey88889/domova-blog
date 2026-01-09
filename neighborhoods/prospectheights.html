@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Prospect Heights | Domova NYC</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+  <style>
+    body {
+      font-family: "Helvetica Neue", sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #1a1a1a;
+    }
+    header {
+      background-color: #f5f5f5;
+      padding: 2rem;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.3rem;
+    }
+    h2 {
+      color: #888;
+      font-weight: 400;
+    }
+    section {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    .block {
+      margin-bottom: 2rem;
+    }
+    .highlight:hover {
+      background-color: #f0f8ff;
+      transition: 0.3s ease;
+    }
+    #map {
+      height: 300px;
+      width: 100%;
+      margin-top: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    footer {
+      text-align: center;
+      font-size: 0.85rem;
+      color: #888;
+      padding: 1rem;
+      border-top: 1px solid #ddd;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>🌳 Prospect Heights</h1>
+    <h2>布鲁克林隐藏的宝藏街区</h2>
+  </header>
+
+  <section>
+    <div class="block highlight">
+      <h3>English Overview</h3>
+      <p>Prospect Heights is a charming, quieter gem in central Brooklyn, nestled between bustling Downtown and leafy Prospect Park. Known for its tree-lined avenues, historic brownstones, and cultural hotspots like the Brooklyn Museum and Barclays Center, it blends calm residential life with vibrant city energy.</p >
+    </div>
+
+    <div class="block highlight">
+      <h3>中文赏析</h3>
+      <p>Prospect Heights 是布鲁克林中部的一颗安静宝石，坐落在热闹的市中心与绿意盎然的展望公园之间。街道两旁是红褐石老宅、咖啡馆与独立小店。这里有布鲁克林博物馆、植物园和 Barclays 中心，是文化与生活完美交汇的所在。</p >
+    </div>
+
+    <div id="map"></div>
+  </section>
+
+
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+  <script>
+    const map = L.map('map').setView([40.6764, -73.9659], 14); // Prospect Heights 坐标
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '© OpenStreetMap contributors'
+    }).addTo(map);
+
+    L.marker([40.6764, -73.9659])
+      .addTo(map)
+      .bindPopup('Welcome to Prospect Heights!')
+      .openPopup();
+  </script>
+
+<div id="footer"></div>
+<script>
+  fetch("/components/footer.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("footer").innerHTML = html;
+    });
+</script>
+
+</body>
+</html>

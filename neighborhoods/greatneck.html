@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Great Neck | Domova</title>
+  <style>
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #fdfdfd;
+      margin: 0;
+      padding: 0;
+      color: #1a1a1a;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    section {
+      padding: 1rem 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    a.back-link {
+      display: block;
+      text-align: center;
+      padding: 2rem;
+      color: #0074D9;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+<section class="neighborhood-intro">
+  <h1>🌳 Great Neck</h1>
+  <p><strong>CN｜长岛传统富人区，精英教育与宁静生活的交汇点</strong><br>
+  Great Neck 坐落于长岛北岸，是纽约最负盛名的住宅社区之一。以优质学区、宁静绿意和高学历居民闻名，是众多企业家、金融人士和演艺圈家庭的首选之地。</p >
+  <p><strong>EN｜Elite suburb with top-tier schools and tranquil greenery</strong><br>
+  Located on the North Shore of Long Island, Great Neck is a prestigious residential enclave known for its award-winning school districts, leafy neighborhoods, and an affluent, highly educated population. A perennial favorite among CEOs, investors, and creatives alike.</p >
+</section>
+
+  <a href="index.html" class="back-link">← Back to Neighborhoods</a >
+
+<div id="footer"></div>
+<script>
+  fetch("/components/footer.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("footer").innerHTML = html;
+    });
+</script>
+
+</body>
+
+</html>
